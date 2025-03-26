@@ -68,79 +68,79 @@ const Q1_CONFIG = {
   },
   sub_7: {
     groundTruth: {
-      A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png"
+      A: "static/user_study/Q1/aporee_49645_56608/ground_truth/25713.jpg",
+      B: "static/user_study/Q1/aporee_49645_56608/ground_truth/25717.jpg"
     },
     generatedLandscape: {
-      A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png",
-      C: "static/images/GISenseLabLogoPNG.png"
+      A: "static/user_study/Q1/aporee_4062_5420/generated/104139.jpg",
+      B: "static/user_study/Q1/aporee_6903_8580/generated/165142.jpg",
+      C: "static/user_study/Q1/aporee_49645_56608/generated/25717.jpg"
     }
   },
   sub_8: {
     groundTruth: {
-      A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png"
+      A: "static/user_study/Q1/aporee_6950_8641/ground_truth/301994.jpg",
+      B: "static/user_study/Q1/aporee_6950_8641/ground_truth/302003.jpg"
     },
     generatedLandscape: {
-      A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png",
-      C: "static/images/GISenseLabLogoPNG.png"
+      A: "static/user_study/Q1/aporee_6950_8641/generated/301994.jpg",
+      B: "static/user_study/Q1/aporee_6712_8275/generated/174353.jpg",
+      C: "static/user_study/Q1/aporee_4163_5523/generated/193723.jpg"
     }
   },
   sub_9: {
     groundTruth: {
-      A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png"
+      A: "static/user_study/Q1/aporee_49149_56305/ground_truth/216266.jpg",
+      B: "static/user_study/Q1/aporee_49149_56305/ground_truth/216275.jpg"
     },
     generatedLandscape: {
-      A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png",
-      C: "static/images/GISenseLabLogoPNG.png"
+      A: "static/user_study/Q1/aporee_49149_56305/generated/216266.jpg",
+      B: "static/user_study/Q1/aporee_6410_7955/generated/283435.jpg",
+      C: "static/user_study/Q1/aporee_6122_7648/generated/58321.jpg"
     }
   },
   sub_10: {
     groundTruth: {
-      A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png"
+      A: "static/user_study/Q1/aporee_47964_54529/ground_truth/70122.jpg",
+      B: "static/user_study/Q1/aporee_47964_54529/ground_truth/70138.jpg"
     },
     generatedLandscape: {
-      A: "static/images/GISenseLabLogoPNG.png",
+      A: "static/user_study/Q1/aporee_47964_54529/generated/70122.jpg",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png"
     }
   },
   sub_11: {
     groundTruth: {
-      A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png"
+      A: "static/user_study/Q1/aporee_47209_53645/generated/146067.jpg",
+      B: "static/user_study/Q1/aporee_47209_53645/ground_truth/146070.jpg"
     },
     generatedLandscape: {
       A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png",
+      B: "static/user_study/Q1/aporee_47209_53645/generated/146070.jpg",
       C: "static/images/GISenseLabLogoPNG.png"
     }
   },
   sub_12: {
     groundTruth: {
-      A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png"
+      A: "static/user_study/Q1/aporee_45778_51990/ground_truth/186671.jpg",
+      B: "static/user_study/Q1/aporee_45778_51990/ground_truth/186676.jpg"
     },
     generatedLandscape: {
       A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png",
+      B: "static/user_study/Q1/aporee_45778_51990/generated/186676.jpg",
       C: "static/images/GISenseLabLogoPNG.png"
     }
   },
   sub_13: {
     groundTruth: {
-      A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png"
+      A: "static/user_study/Q1/aporee_24229_28135/ground_truth/131169.jpg",
+      B: "static/user_study/Q1/aporee_24229_28135/ground_truth/131177.jpg"
     },
     generatedLandscape: {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/images/GISenseLabLogoPNG.png",
-      C: "static/images/GISenseLabLogoPNG.png"
+      C: "static/user_study/Q1/aporee_24229_28135/generated/131177.jpg"
     }
   },
   sub_14: {

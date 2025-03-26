@@ -43,10 +43,21 @@
   <script src="config/use_study_src.js"></script>
 </head>
 <body>
+<section class="section" id="user-study-question2">
+  <div class="q2-question-background">
+    <div class="container">
+      <h2 class="title is-3">Q1: Select the two images that you believe are most closely related to the audio.</h2>
+      <!-- 内层统一背景容器 -->
+      <div id="q2-pairs-container"></div>
+    </div>
+  </div>
+</section>
+
+
 <section class="section" id="user-study-question1">
   <div class="question-background">
     <div class="container">
-      <h2 class="title is-3">Q1: Which two generated landscapes most accurately represent the area shown in the ground truth images?</h2>
+      <h2 class="title is-3">Q2: Which one generated landscape most accurately represent the area shown in the ground truth images?</h2>
       <!-- 内层统一背景容器 -->
       <div class="pair-wrapper">
         <!-- 大block标号 -->
@@ -101,15 +112,7 @@
   </div>
 </section>
 
-<section class="section" id="user-study-question2">
-  <div class="q2-question-background">
-    <div class="container">
-      <h2 class="title is-3">Q2: Select the two images that you believe are most closely related to the audio.</h2>
-      <!-- 内层统一背景容器 -->
-      <div id="q2-pairs-container"></div>
-    </div>
-  </div>
-</section>
+
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
