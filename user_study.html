@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soundscape2landscape: Translating Sounding Environment to Landscape using XXX</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/GISenseLabLogoPNG.png">
+  <link rel="stylesheet" href="static/css/user_study/q1.css">
+  <link rel="stylesheet" href="static/css/user_study/q2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="config/use_study_src.js"></script>
+</head>
+<body>
+<section class="section" id="user-study-question1">
+  <div class="question-background">
+    <div class="container">
+      <h2 class="title is-3">Q1: Which two generated landscapes most accurately represent the area shown in the ground truth images?</h2>
+      <!-- 内层统一背景容器 -->
+      <div class="pair-wrapper">
+        <!-- 大block标号 -->
+        <div class="big-block-label">1</div>
+        <div class="pair">
+          <!-- 左侧：Ground Truth -->
+          <div class="left-section">
+            <h3 class="subtitle">Ground Truth</h3>
+            <div class="images">
+              <div class="image-label">
+                <img id="q_1_sub1_ground_truth_1" alt="Ground Truth Image A" class="square-image">
+              </div>
+              <div class="image-label">
+                <img id="q_1_sub1_ground_truth_2" alt="Ground Truth Image B" class="square-image">
+              </div>
+            </div>
+          </div>
+          <!-- 右侧：Generated Landscape -->
+          <div class="right-section">
+            <h3 class="subtitle">Generated Landscape</h3>
+            <div class="images">
+              <div class="image-label">
+                <span class="label">A</span>
+                <img id="q_1_sub1_generated_A" alt="Generated Landscape Image A" class="square-image">
+              </div>
+              <div class="image-label">
+                <span class="label">B</span>
+                <img id="q_1_sub1_generated_B" alt="Generated Landscape Image B" class="square-image">
+              </div>
+              <div class="image-label">
+                <span class="label">C</span>
+                <img id="q_1_sub1_generated_C" alt="Generated Landscape Image C" class="square-image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 提交按钮，风格参考给定样例 -->
+        <div class="submit-container">
+            <span class="link-block">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScdutwHNcMSyMFpB5jFvCZmnemePvMUojtqwRKpB9-MHtDghQ/viewform?usp=header" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-paper-plane"></i>
+                </span>
+                <span>Submit</span>
+              </a>
+            </span>
+        </div>
+      </div>
+      <!-- 下面通过 JavaScript 循环生成子问题 2 到 15 -->
+      <div id="q1-pairs-container"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="user-study-question2">
+  <div class="q2-question-background">
+    <div class="container">
+      <h2 class="title is-3">Q2: Select the two images that you believe are most closely related to the audio.</h2>
+      <!-- 内层统一背景容器 -->
+      <div id="q2-pairs-container"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("q1-pairs-container");
+      // 循环生成子问题 2 到 15
+      for (let i = 2; i <= 15; i++) {
+        // 创建一个 pair-wrapper
+        const wrapper = document.createElement("div");
+        wrapper.className = "pair-wrapper";
+        // 设置内部 HTML（可根据需要调整样式或结构）
+        wrapper.innerHTML = `
+          <div class="big-block-label">${i}</div>
+          <div class="pair">
+            <div class="left-section">
+              <h3 class="subtitle">Ground Truth</h3>
+              <div class="images">
+                <div class="image-label">
+                  <img id="q_1_sub${i}_ground_truth_1" alt="Ground Truth Image A" class="square-image">
+                </div>
+                <div class="image-label">
+                  <img id="q_1_sub${i}_ground_truth_2" alt="Ground Truth Image B" class="square-image">
+                </div>
+              </div>
+            </div>
+            <div class="right-section">
+              <h3 class="subtitle">Generated Landscape</h3>
+              <div class="images">
+                <div class="image-label">
+                  <span class="label">A</span>
+                  <img id="q_1_sub${i}_generated_A" alt="Generated Landscape Image A" class="square-image">
+                </div>
+                <div class="image-label">
+                  <span class="label">B</span>
+                  <img id="q_1_sub${i}_generated_B" alt="Generated Landscape Image B" class="square-image">
+                </div>
+                <div class="image-label">
+                  <span class="label">C</span>
+                  <img id="q_1_sub${i}_generated_C" alt="Generated Landscape Image C" class="square-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="submit-container">
+            <span class="link-block">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScdutwHNcMSyMFpB5jFvCZmnemePvMUojtqwRKpB9-MHtDghQ/viewform?usp=header" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                <span>Submit</span>
+              </a>
+            </span>
+          </div>
+        `;
+        container.appendChild(wrapper);
+      }
+
+      // 统一为所有 Q1 图片赋值（这里假设你的 Q1_CONFIG 已包含 sub_1 至 sub_15 的数据）
+      // 示例：为每个子问题的 Ground Truth 图片赋值
+    for (let i = 1; i <= 15; i++) {
+      // 假设你的配置对象 Q1_CONFIG 中存在 "sub_1", "sub_2", … "sub_15" 这样的键
+      document.getElementById("q_1_sub" + i + "_ground_truth_1").src =
+        Q1_CONFIG["sub_" + i].groundTruth.A;
+      document.getElementById("q_1_sub" + i + "_ground_truth_2").src =
+        Q1_CONFIG["sub_" + i].groundTruth.B;
+      document.getElementById("q_1_sub" + i + "_generated_A").src =
+        Q1_CONFIG["sub_" + i].generatedLandscape.A;
+      document.getElementById("q_1_sub" + i + "_generated_B").src =
+        Q1_CONFIG["sub_" + i].generatedLandscape.B;
+      document.getElementById("q_1_sub" + i + "_generated_C").src =
+        Q1_CONFIG["sub_" + i].generatedLandscape.C;
+    }
+
+    });
+  </script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("q2-pairs-container");
+
+  // 循环生成 sub_1 到 sub_15 的子问题
+  for (let i = 1; i <= 15; i++) {
+    // 创建 q2-pair-wrapper
+    const wrapper = document.createElement("div");
+    wrapper.className = "q2-pair-wrapper";
+
+    // 设置内部 HTML
+    wrapper.innerHTML = `
+      <div class="q2-big-block-label">${i}</div>
+      <div class="q2-content-block">
+        <audio controls style="display: block; margin: 0 auto 20px auto;">
+          <source id="q2_sub${i}_audio" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="q2-images">
+          <div class="q2-image-label">
+            <span class="label">A</span>
+            <img id="q2_sub${i}_img_A" alt="Image A" class="q2-square-image">
+          </div>
+          <div class="q2-image-label">
+            <span class="label">B</span>
+            <img id="q2_sub${i}_img_B" alt="Image B" class="q2-square-image">
+          </div>
+          <div class="q2-image-label">
+            <span class="label">C</span>
+            <img id="q2_sub${i}_img_C" alt="Image C" class="q2-square-image">
+          </div>
+          <div class="q2-image-label">
+            <span class="label">D</span>
+            <img id="q2_sub${i}_img_D" alt="Image D" class="q2-square-image">
+          </div>
+          <div class="q2-image-label">
+            <span class="label">E</span>
+            <img id="q2_sub${i}_img_E" alt="Image E" class="q2-square-image">
+          </div>
+        </div>
+      </div>
+      <div class="q2-submit-container">
+        <span class="link-block">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3OGEEBJpATcF8wSabpjoRxwv5NOplseacxaA3QmyUU37-mA/viewform?usp=header" class="external-link button is-normal is-rounded is-dark">
+            <span class="icon"><i class="fas fa-paper-plane"></i></span>
+            <span>Submit</span>
+          </a>
+        </span>
+      </div>
+    `;
+    container.appendChild(wrapper);
+  }
+
+  // 根据 Q2_CONFIG 为每个子问题赋值
+  for (let i = 1; i <= 15; i++) {
+    // 取对应的配置（这里假设 Q2_CONFIG 中的键名为 "sub_1", "sub_2", ... "sub_15"）
+    const subConfig = Q2_CONFIG["sub_" + i];
+    if (subConfig) {
+      // 设置音频（通过 source 元素）
+      const audioSource = document.getElementById("q2_sub" + i + "_audio");
+      if (audioSource && subConfig.audio) {
+        audioSource.src = subConfig.audio;
+      }
+      // 设置图片
+      const keys = ["A", "B", "C", "D", "E"];
+      keys.forEach(key => {
+        const imgElement = document.getElementById("q2_sub" + i + "_img_" + key);
+        if (imgElement && subConfig.images[key]) {
+          imgElement.src = subConfig.images[key];
+        }
+      });
+    }
+  }
+});
+</script>
+
+
+</body>
+</html>

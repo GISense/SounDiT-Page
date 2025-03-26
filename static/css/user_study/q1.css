@@ -1,0 +1,89 @@
+:root {
+  /* 默认颜色，可通过 HTML 内联样式覆盖 */
+  --color-question-background: #ddd;
+  --color-pair-wrapper: #f0f0f0;
+  --color-left-section: #f7f7f7;
+  --color-right-section: #e7e7e7;
+  --color-block-label: rgba(0, 0, 0, 0.7);
+  --color-image-label: rgba(0, 0, 0, 0.6);
+}
+
+.question-background {
+  background-color: var(--color-question-background);
+  padding: 30px 20px;
+}
+
+.pair-wrapper {
+  background-color: var(--color-pair-wrapper);
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.big-block-label {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: var(--color-block-label);
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 16px;
+  border-radius: 3px;
+  z-index: 1000; /* 确保标号显示在最上层 */
+}
+
+.pair {
+  display: flex;
+  gap: 20px;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  padding: 10px;
+  position: relative;
+}
+
+.left-section {
+  background-color: var(--color-left-section);
+}
+
+.right-section {
+  background-color: var(--color-right-section);
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.image-label {
+  position: relative;
+  display: inline-block;
+}
+
+.image-label .label {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: var(--color-image-label);
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.square-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.submit-container {
+  text-align: right;
+  margin-top: 20px;
+}
