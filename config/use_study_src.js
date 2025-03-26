@@ -168,29 +168,29 @@ const Q1_CONFIG = {
 };
 const Q2_CONFIG = {
   sub_1: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/157.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/images/GISenseLabLogoPNG.png",
-      C: "static/images/GISenseLabLogoPNG.png",
+      C: "static/user_study/Q2/generated/157.jpg",
       D: "static/images/GISenseLabLogoPNG.png",
       E: "static/images/GISenseLabLogoPNG.png"
     }
   },
   sub_2: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/2294.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png",
+      B: "static/user_study/Q2/generated/2294.jpg",
       C: "static/images/GISenseLabLogoPNG.png",
       D: "static/images/GISenseLabLogoPNG.png",
       E: "static/images/GISenseLabLogoPNG.png"
     }
   },
   sub_3: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/4733.wav",
     images: {
-      A: "static/images/GISenseLabLogoPNG.png",
+      A: "static/user_study/Q2/generated/4733.jpg",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
       D: "static/images/GISenseLabLogoPNG.png",
@@ -198,29 +198,29 @@ const Q2_CONFIG = {
     }
   },
   sub_4: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/62750.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
       D: "static/images/GISenseLabLogoPNG.png",
-      E: "static/images/GISenseLabLogoPNG.png"
+      E: "static/user_study/Q2/generated/62750.jpg"
     }
   },
   sub_5: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/70746.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/images/GISenseLabLogoPNG.png",
-      C: "static/images/GISenseLabLogoPNG.png",
+      C: "static/user_study/Q2/generated/70746.jpg",
       D: "static/images/GISenseLabLogoPNG.png",
       E: "static/images/GISenseLabLogoPNG.png"
     }
   },
   sub_6: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/158639.wav",
     images: {
-      A: "static/images/GISenseLabLogoPNG.png",
+      A: "static/user_study/Q2/generated/158639.jpg",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
       D: "static/images/GISenseLabLogoPNG.png",
@@ -228,59 +228,59 @@ const Q2_CONFIG = {
     }
   },
   sub_7: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/165117.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/images/GISenseLabLogoPNG.png",
-      C: "static/images/GISenseLabLogoPNG.png",
+      C: "static/user_study/Q2/generated/165117.jpg",
       D: "static/images/GISenseLabLogoPNG.png",
       E: "static/images/GISenseLabLogoPNG.png"
     }
   },
   sub_8: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/172440.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
       D: "static/images/GISenseLabLogoPNG.png",
-      E: "static/images/GISenseLabLogoPNG.png"
+      E: "static/user_study/Q2/generated/172440.jpg"
     }
   },
   sub_9: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/191272.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
-      D: "static/images/GISenseLabLogoPNG.png",
+      D: "static/user_study/Q2/generated/191272.jpg",
       E: "static/images/GISenseLabLogoPNG.png"
     }
   },
   sub_10: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/186158.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/images/GISenseLabLogoPNG.png",
-      C: "static/images/GISenseLabLogoPNG.png",
+      C: "static/user_study/Q2/generated/186158.jpg",
       D: "static/images/GISenseLabLogoPNG.png",
       E: "static/images/GISenseLabLogoPNG.png"
     }
   },
   sub_11: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/188052.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
-      D: "static/images/GISenseLabLogoPNG.png",
+      D: "static/user_study/Q2/generated/188052.jpg",
       E: "static/images/GISenseLabLogoPNG.png"
     }
   },
   sub_12: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/243449.wav",
     images: {
-      A: "static/images/GISenseLabLogoPNG.png",
+      A: "static/user_study/Q2/generated/243449.jpg",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
       D: "static/images/GISenseLabLogoPNG.png",
@@ -288,33 +288,33 @@ const Q2_CONFIG = {
     }
   },
   sub_13: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/283426.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
       D: "static/images/GISenseLabLogoPNG.png",
-      E: "static/images/GISenseLabLogoPNG.png"
+      E: "static/user_study/Q2/generated/283426.jpg"
     }
   },
   sub_14: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/287782.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png",
+      B: "static/user_study/Q2/generated/287782.jpg",
       C: "static/images/GISenseLabLogoPNG.png",
       D: "static/images/GISenseLabLogoPNG.png",
       E: "static/images/GISenseLabLogoPNG.png"
     }
   },
   sub_15: {
-    audio: "static/user_study/Q2/16907.wav",
+    audio: "static/user_study/Q2/audio/289368.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
       D: "static/images/GISenseLabLogoPNG.png",
-      E: "static/images/GISenseLabLogoPNG.png"
+      E: "static/user_study/Q2/generated/289368.jpg"
     }
   }
 };
