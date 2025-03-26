@@ -127,9 +127,9 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/aporee_45778_51990/ground_truth/186676.jpg"
     },
     generatedLandscape: {
-      A: "static/images/GISenseLabLogoPNG.png",
+      A: "static/user_study/Q1/aporee_47964_54529/generated/70138.jpg",
       B: "static/user_study/Q1/aporee_45778_51990/generated/186676.jpg",
-      C: "static/images/GISenseLabLogoPNG.png"
+      C: "static/user_study/Q1/aporee_49356_56256/generated/68447.jpg"
     }
   },
   sub_13: {
@@ -138,8 +138,8 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/aporee_24229_28135/ground_truth/131177.jpg"
     },
     generatedLandscape: {
-      A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png",
+      A: "static/user_study/Q1/aporee_49814_56793/generated/171836.jpg",
+      B: "static/user_study/Q1/aporee_14405_16762/generated/301159.jpg",
       C: "static/user_study/Q1/aporee_24229_28135/generated/131177.jpg"
     }
   },
@@ -149,8 +149,8 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/aporee_16984_19777/ground_truth/15172.jpg"
     },
     generatedLandscape: {
-      A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png",
+      A: "static/user_study/Q1/aporee_14223_16560/generated/332017.jpg",
+      B: "static/user_study/Q1/aporee_6712_8275/generated/174356.jpg",
       C: "static/user_study/Q1/aporee_16984_19777/generated/15172.jpg"
     }
   },
@@ -160,8 +160,8 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/aporee_7780_9527/ground_truth/326714.jpg"
     },
     generatedLandscape: {
-      A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png",
+      A: "static/user_study/Q1/aporee_7383_9108/generated/109107.jpg",
+      B: "static/user_study/Q1/aporee_4368_5739/generated/294795.jpg",
       C: "static/user_study/Q1/aporee_7780_9527/generated/326714.jpg"
     }
   }
