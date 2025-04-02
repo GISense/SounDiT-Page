@@ -174,7 +174,7 @@ const Q2_CONFIG = {
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/user_study/Q2/generated/157.jpg",
       D: "static/images/GISenseLabLogoPNG.png",
-      E: "static/images/GISenseLabLogoPNG.png"
+      E: "static/user_study/Q2/ground_truth/157.jpg"
     }
   },
   sub_2: {
@@ -183,7 +183,7 @@ const Q2_CONFIG = {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/user_study/Q2/generated/2294.jpg",
       C: "static/images/GISenseLabLogoPNG.png",
-      D: "static/images/GISenseLabLogoPNG.png",
+      D: "static/user_study/Q2/ground_truth/2294.jpg",
       E: "static/images/GISenseLabLogoPNG.png"
     }
   },
@@ -192,7 +192,7 @@ const Q2_CONFIG = {
     images: {
       A: "static/user_study/Q2/generated/4733.jpg",
       B: "static/images/GISenseLabLogoPNG.png",
-      C: "static/images/GISenseLabLogoPNG.png",
+      C: "static/user_study/Q2/ground_truth/4733.jpg",
       D: "static/images/GISenseLabLogoPNG.png",
       E: "static/images/GISenseLabLogoPNG.png"
     }
@@ -203,14 +203,14 @@ const Q2_CONFIG = {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
-      D: "static/images/GISenseLabLogoPNG.png",
+      D: "static/user_study/Q2/ground_truth/62750.jpg",
       E: "static/user_study/Q2/generated/62750.jpg"
     }
   },
   sub_5: {
     audio: "static/user_study/Q2/audio/70746.wav",
     images: {
-      A: "static/images/GISenseLabLogoPNG.png",
+      A: "static/user_study/Q2/ground_truth/70746.jpg",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/user_study/Q2/generated/70746.jpg",
       D: "static/images/GISenseLabLogoPNG.png",
@@ -223,14 +223,14 @@ const Q2_CONFIG = {
       A: "static/user_study/Q2/generated/158639.jpg",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
-      D: "static/images/GISenseLabLogoPNG.png",
+      D: "static/user_study/Q2/ground_truth/158639.jpg",
       E: "static/images/GISenseLabLogoPNG.png"
     }
   },
   sub_7: {
     audio: "static/user_study/Q2/audio/165117.wav",
     images: {
-      A: "static/images/GISenseLabLogoPNG.png",
+      A: "static/user_study/Q2/ground_truth/165117.jpg",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/user_study/Q2/generated/165117.jpg",
       D: "static/images/GISenseLabLogoPNG.png",
@@ -242,7 +242,7 @@ const Q2_CONFIG = {
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/images/GISenseLabLogoPNG.png",
-      C: "static/images/GISenseLabLogoPNG.png",
+      C: "static/user_study/Q2/ground_truth/172440.jpg",
       D: "static/images/GISenseLabLogoPNG.png",
       E: "static/user_study/Q2/generated/172440.jpg"
     }
@@ -251,7 +251,7 @@ const Q2_CONFIG = {
     audio: "static/user_study/Q2/audio/191272.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png",
+      B: "static/user_study/Q2/ground_truth/191272.jpg",
       C: "static/images/GISenseLabLogoPNG.png",
       D: "static/user_study/Q2/generated/191272.jpg",
       E: "static/images/GISenseLabLogoPNG.png"
@@ -261,7 +261,7 @@ const Q2_CONFIG = {
     audio: "static/user_study/Q2/audio/186158.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png",
+      B: "static/user_study/Q2/ground_truth/186158.jpg",
       C: "static/user_study/Q2/generated/186158.jpg",
       D: "static/images/GISenseLabLogoPNG.png",
       E: "static/images/GISenseLabLogoPNG.png"
@@ -274,7 +274,7 @@ const Q2_CONFIG = {
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
       D: "static/user_study/Q2/generated/188052.jpg",
-      E: "static/images/GISenseLabLogoPNG.png"
+      E: "static/user_study/Q2/ground_truth/188052.jpg"
     }
   },
   sub_12: {
@@ -283,7 +283,7 @@ const Q2_CONFIG = {
       A: "static/user_study/Q2/generated/243449.jpg",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
-      D: "static/images/GISenseLabLogoPNG.png",
+      D: "static/user_study/Q2/ground_truth/243449.jpg",
       E: "static/images/GISenseLabLogoPNG.png"
     }
   },
@@ -291,7 +291,7 @@ const Q2_CONFIG = {
     audio: "static/user_study/Q2/audio/283426.wav",
     images: {
       A: "static/images/GISenseLabLogoPNG.png",
-      B: "static/images/GISenseLabLogoPNG.png",
+      B: "static/user_study/Q2/ground_truth/283426.jpg",
       C: "static/images/GISenseLabLogoPNG.png",
       D: "static/images/GISenseLabLogoPNG.png",
       E: "static/user_study/Q2/generated/283426.jpg"
@@ -303,14 +303,14 @@ const Q2_CONFIG = {
       A: "static/images/GISenseLabLogoPNG.png",
       B: "static/user_study/Q2/generated/287782.jpg",
       C: "static/images/GISenseLabLogoPNG.png",
-      D: "static/images/GISenseLabLogoPNG.png",
+      D: "static/user_study/Q2/ground_truth/287782.jpg",
       E: "static/images/GISenseLabLogoPNG.png"
     }
   },
   sub_15: {
     audio: "static/user_study/Q2/audio/289368.wav",
     images: {
-      A: "static/images/GISenseLabLogoPNG.png",
+      A: "static/user_study/Q2/ground_truth/289368.jpg",
       B: "static/images/GISenseLabLogoPNG.png",
       C: "static/images/GISenseLabLogoPNG.png",
       D: "static/images/GISenseLabLogoPNG.png",
