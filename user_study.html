@@ -46,7 +46,9 @@
 <section class="section" id="user-study-question2">
   <div class="q2-question-background">
     <div class="container">
-      <h2 class="title is-3">Q1: Select the two images that you believe are most closely related to the audio.</h2>
+      <h2 class="title is-3">
+        <span class="q2-gradient-text">Q1: Select the two images that you believe are most closely related to the audio clip.</span>
+      </h2>
       <!-- 内层统一背景容器 -->
       <div id="q2-pairs-container"></div>
     </div>
@@ -57,7 +59,10 @@
 <section class="section" id="user-study-question1">
   <div class="question-background">
     <div class="container">
-      <h2 class="title is-3">Q2: Which one generated landscape most accurately represent the area shown in the ground truth images?</h2>
+      <h2 class="title is-3";>
+        <span class="q1-gradient-text">Q2: Choose the generated landscape that best matches the ground truth.</span>
+
+      </h2>
         <!-- 提交按钮，风格参考给定样例 -->
       <!-- 下面通过 JavaScript 循环生成子问题 2 到 15 -->
       <div id="q1-pairs-container"></div>
@@ -83,12 +88,12 @@
       // 创建一个 pair-wrapper
       const wrapper = document.createElement("div");
       wrapper.className = "pair-wrapper";
-      // 注意：此处去除了每题内部的提交按钮
+
       wrapper.innerHTML = `
         <div class="big-block-label">${i}</div>
         <div class="pair">
           <div class="left-section">
-            <h3 class="subtitle">Ground Truth</h3>
+            <h3 class="subtitle" style="text-align: center;">Ground Truth</h3>
             <div class="images">
               <div class="image-label">
                 <img data-question="${i}" id="q_1_sub${i}_ground_truth_1" alt="Ground Truth Image A" class="square-image non-selectable-image">
@@ -99,7 +104,8 @@
             </div>
           </div>
           <div class="right-section">
-            <h3 class="subtitle">Generated Landscape</h3>
+            <h3 class="subtitle" style="text-align: center;">Generated Landscape</h3>
+
             <div class="images">
               <div class="image-label">
                 <span class="label">A</span>
@@ -160,9 +166,9 @@
 
     // 添加整个 Q1 区域的提交按钮（仅一个），放在所有题目后面
     const submitButton = document.createElement("button");
-    submitButton.textContent = "Submit Q2";
-    submitButton.style.display = "block";
-    submitButton.className = "external-link button is-normal is-rounded is-dark";
+    submitButton.textContent = "Submit";
+    submitButton.className = "external-link button is-normal is-rounded";
+    submitButton.classList.add("q1-custom-button");
 
     submitButton.addEventListener("click", () => {
       // 检查每个题目是否已经选择了一个选项
@@ -202,7 +208,16 @@
         alert("Submission failed. Please try again later and contact us.");
       });
     });
-    container.appendChild(submitButton);
+    const submitContainer = document.createElement("div");
+    submitContainer.style.textAlign = "center"; // 居中按钮
+    submitContainer.style.margin = "40px 0";    // 加点上下间距
+    submitContainer.appendChild(submitButton);
+    submitButton.style.width = "100%";      // 撑满父容器
+    submitContainer.style.margin = "40px auto";
+    submitButton.style.borderRadius = "12px";
+    submitButton.style.boxShadow = "0 4px 10px rgba(0,0,0,0.1)";
+    submitButton.classList.add("q2-custom-button");
+    container.appendChild(submitContainer);
   });
 </script>
 
@@ -229,7 +244,9 @@ document.addEventListener("DOMContentLoaded", () => {
     wrapper.innerHTML = `
       <div class="q2-big-block-label">${i}</div>
       <div class="q2-content-block">
-      Select the two images that you believe are most closely related to the audio.
+        <div style="text-align: center; margin-bottom: 16px;">
+          Select the two images that you believe are most closely related to the audio.
+        </div>
         <audio controls style="display: block; margin: 0 auto 20px auto;">
           <source id="q2_sub${i}_audio" type="audio/mp3">
           Your browser does not support the audio element.
@@ -316,8 +333,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 添加整个 Q2 区域的提交按钮（仅一个），放在所有题目后面
   const submitButton = document.createElement("button");
-  submitButton.textContent = "Submit Q1";
-  submitButton.className = "external-link button is-normal is-rounded is-dark";
+  submitButton.textContent = "Submit";
+  submitButton.className = "external-link button is-normal is-rounded";
+  submitButton.classList.add("q2-custom-button");
+
   submitButton.addEventListener("click", () => {
     // 检查每个题目是否恰好选择了两个选项
     for (let i = 1; i <= 15; i++) {
@@ -358,7 +377,17 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Submission failed. Please try again later and contact us.");
       });
     });
-    container.appendChild(submitButton);
+
+    const submitContainer = document.createElement("div");
+    submitContainer.style.textAlign = "center"; // 居中按钮
+    submitContainer.style.margin = "40px 0";    // 加点上下间距
+    submitContainer.appendChild(submitButton);
+    submitButton.style.width = "100%";      // 撑满父容器
+    submitContainer.style.margin = "40px auto";
+    submitButton.style.borderRadius = "12px";
+    submitButton.style.boxShadow = "0 4px 10px rgba(0,0,0,0.1)";
+    submitButton.classList.add("q2-custom-button");
+    container.appendChild(submitContainer);
   });
 </script>
 
