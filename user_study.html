@@ -58,51 +58,7 @@
   <div class="question-background">
     <div class="container">
       <h2 class="title is-3">Q2: Which one generated landscape most accurately represent the area shown in the ground truth images?</h2>
-      <!-- 内层统一背景容器 -->
-      <div class="pair-wrapper">
-        <!-- 大block标号 -->
-        <div class="big-block-label">1</div>
-        <div class="pair">
-          <!-- 左侧：Ground Truth -->
-          <div class="left-section">
-            <h3 class="subtitle">Ground Truth</h3>
-            <div class="images">
-              <div class="image-label">
-                <img id="q_1_sub1_ground_truth_1" alt="Ground Truth Image A" class="square-image">
-              </div>
-              <div class="image-label">
-                <img id="q_1_sub1_ground_truth_2" alt="Ground Truth Image B" class="square-image">
-              </div>
-            </div>
-          </div>
-          <!-- 右侧：Generated Landscape -->
-          <div class="right-section">
-            <h3 class="subtitle">Generated Landscape</h3>
-            <div class="images">
-              <div class="image-label">
-                <span class="label">A</span>
-                <img id="q_1_sub1_generated_A" alt="Generated Landscape Image A" class="square-image">
-              </div>
-              <div class="image-label">
-                <span class="label">B</span>
-                <img id="q_1_sub1_generated_B" alt="Generated Landscape Image B" class="square-image">
-              </div>
-              <div class="image-label">
-                <span class="label">C</span>
-                <img id="q_1_sub1_generated_C" alt="Generated Landscape Image C" class="square-image">
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- 提交按钮，风格参考给定样例 -->
-        <div class="q2-submit-container">
-          <span class="link-block">
-            <a href="javascript:void(0);" class="external-link button is-normal is-rounded is-dark" onclick="openNewPageQ2(event)">
-              <span class="icon"><i class="fas fa-paper-plane"></i></span>
-              <span>Submit</span>
-            </a>
-          </span>
-        </div>
       <!-- 下面通过 JavaScript 循环生成子问题 2 到 15 -->
       <div id="q1-pairs-container"></div>
     </div>
@@ -113,62 +69,83 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const container = document.getElementById("q1-pairs-container");
-      // 循环生成子问题 2 到 15
-      for (let i = 2; i <= 15; i++) {
-        // 创建一个 pair-wrapper
-        const wrapper = document.createElement("div");
-        wrapper.className = "pair-wrapper";
-        // 设置内部 HTML（可根据需要调整样式或结构）
-        wrapper.innerHTML = `
-          <div class="big-block-label">${i}</div>
-          <div class="pair">
-            <div class="left-section">
-              <h3 class="subtitle">Ground Truth</h3>
-              <div class="images">
-                <div class="image-label">
-                  <img id="q_1_sub${i}_ground_truth_1" alt="Ground Truth Image A" class="square-image">
-                </div>
-                <div class="image-label">
-                  <img id="q_1_sub${i}_ground_truth_2" alt="Ground Truth Image B" class="square-image">
-                </div>
+  document.addEventListener("DOMContentLoaded", () => {
+    // 用于保存每个问题的选中图片ID，key 为问题编号（1-15）
+    const selections = {};
+
+    const container = document.getElementById("q1-pairs-container");
+
+    // 循环生成子问题 1 到 15
+    for (let i = 1; i <= 15; i++) {
+      // 初始化该问题的选中项为空
+      selections[i] = null;
+
+      // 创建一个 pair-wrapper
+      const wrapper = document.createElement("div");
+      wrapper.className = "pair-wrapper";
+      // 注意：此处去除了每题内部的提交按钮
+      wrapper.innerHTML = `
+        <div class="big-block-label">${i}</div>
+        <div class="pair">
+          <div class="left-section">
+            <h3 class="subtitle">Ground Truth</h3>
+            <div class="images">
+              <div class="image-label">
+                <img data-question="${i}" id="q_1_sub${i}_ground_truth_1" alt="Ground Truth Image A" class="square-image non-selectable-image">
               </div>
-            </div>
-            <div class="right-section">
-              <h3 class="subtitle">Generated Landscape</h3>
-              <div class="images">
-                <div class="image-label">
-                  <span class="label">A</span>
-                  <img id="q_1_sub${i}_generated_A" alt="Generated Landscape Image A" class="square-image">
-                </div>
-                <div class="image-label">
-                  <span class="label">B</span>
-                  <img id="q_1_sub${i}_generated_B" alt="Generated Landscape Image B" class="square-image">
-                </div>
-                <div class="image-label">
-                  <span class="label">C</span>
-                  <img id="q_1_sub${i}_generated_C" alt="Generated Landscape Image C" class="square-image">
-                </div>
+              <div class="image-label">
+                <img data-question="${i}" id="q_1_sub${i}_ground_truth_2" alt="Ground Truth Image B" class="square-image non-selectable-image">
               </div>
             </div>
           </div>
-      <div class="q2-submit-container">
-        <span class="link-block">
-          <a href="javascript:void(0);" class="external-link button is-normal is-rounded is-dark" onclick="openNewPageQ2(event)">
-            <span class="icon"><i class="fas fa-paper-plane"></i></span>
-            <span>Submit</span>
-          </a>
-        </span>
-      </div>
-        `;
-        container.appendChild(wrapper);
-      }
+          <div class="right-section">
+            <h3 class="subtitle">Generated Landscape</h3>
+            <div class="images">
+              <div class="image-label">
+                <span class="label">A</span>
+                <img data-question="${i}" id="q_1_sub${i}_generated_A" alt="Generated Landscape Image A" class="square-image selectable-image">
+              </div>
+              <div class="image-label">
+                <span class="label">B</span>
+                <img data-question="${i}" id="q_1_sub${i}_generated_B" alt="Generated Landscape Image B" class="square-image selectable-image">
+              </div>
+              <div class="image-label">
+                <span class="label">C</span>
+                <img data-question="${i}" id="q_1_sub${i}_generated_C" alt="Generated Landscape Image C" class="square-image selectable-image">
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      container.appendChild(wrapper);
+    }
 
-      // 统一为所有 Q1 图片赋值（这里假设你的 Q1_CONFIG 已包含 sub_1 至 sub_15 的数据）
-      // 示例：为每个子问题的 Ground Truth 图片赋值
+    // 为所有生成图片添加点击事件
+    document.querySelectorAll('.selectable-image').forEach(img => {
+      img.addEventListener('click', () => {
+        const questionNumber = img.getAttribute('data-question');
+
+        // 如果当前图片已选中，则取消选中
+        if (selections[questionNumber] === img.id) {
+          img.classList.remove('selected');
+          selections[questionNumber] = null;
+        } else {
+          // 同一问题下取消其他生成图片的选中状态
+          document.querySelectorAll(`img[data-question="${questionNumber}"].selectable-image`).forEach(otherImg => {
+            otherImg.classList.remove('selected');
+          });
+          // 选中当前图片
+          img.classList.add('selected');
+          selections[questionNumber] = img.id;
+        }
+
+        // 此处可利用 selections 与后端进行数据交互
+        console.log("当前选择：", selections);
+      });
+    });
+
+    // 根据 Q1_CONFIG 为每个子问题的图片赋值（假设 Q1_CONFIG 已定义）
     for (let i = 1; i <= 15; i++) {
-      // 假设你的配置对象 Q1_CONFIG 中存在 "sub_1", "sub_2", … "sub_15" 这样的键
       document.getElementById("q_1_sub" + i + "_ground_truth_1").src =
         Q1_CONFIG["sub_" + i].groundTruth.A;
       document.getElementById("q_1_sub" + i + "_ground_truth_2").src =
@@ -181,24 +158,78 @@
         Q1_CONFIG["sub_" + i].generatedLandscape.C;
     }
 
+    // 添加整个 Q1 区域的提交按钮（仅一个），放在所有题目后面
+    const submitButton = document.createElement("button");
+    submitButton.textContent = "Submit Q2";
+    submitButton.style.display = "block";
+    submitButton.className = "external-link button is-normal is-rounded is-dark";
+
+    submitButton.addEventListener("click", () => {
+      // 检查每个题目是否已经选择了一个选项
+      for (let i = 1; i <= 15; i++) {
+        if (!selections[i]) {
+          alert(`You have not answered question ${i}. Please answer all questions before submitting.`);
+          return; // 若有题目未作答，则停止提交
+        }
+      }
+
+      // 构造提交数据，每个对象包含：Q1, 题号, 选项（从图片ID中提取，如 "A", "B", "C"）
+      const submissionData = [];
+      for (let i = 1; i <= 15; i++) {
+        // 图片ID格式示例： "q_1_sub3_generated_B"
+        const parts = selections[i].split("_");
+        const option = parts[parts.length - 1]; // 获取最后一部分，即选项字母
+        submissionData.push({
+          q: "Q2",
+          questionNumber: i,
+          option: option
+        });
+      }
+      console.log("Submission Data:", submissionData);
+       // 通过 fetch 将数据提交到本地 8080 端口的后端接口
+      fetch("http://www.kangyuhao.com/S2LDiT/UserStudy/submitQ2", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(submissionData)
+      })
+      .then(response => response.text())
+      .then(data => {
+        alert("Submission successful! Data has been sent to our server.");
+      })
+      .catch(error => {
+        alert("Submission failed. Please try again later and contact us.");
+      });
     });
-  </script>
+    container.appendChild(submitButton);
+  });
+</script>
+
+
+
+
 
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("q2-pairs-container");
 
+  // 用于保存每个 Q2 问题中选中的图片ID，允许最多2个（key 为题号 1~15）
+  const selectionsQ2 = {};
+  for (let i = 1; i <= 15; i++) {
+    selectionsQ2[i] = [];
+  }
+
   // 循环生成 sub_1 到 sub_15 的子问题
   for (let i = 1; i <= 15; i++) {
-    // 创建 q2-pair-wrapper
     const wrapper = document.createElement("div");
     wrapper.className = "q2-pair-wrapper";
-
-    // 设置内部 HTML
+    // 每个题目包含音频和5个图片选项，所有图片均使用 q2-square-image 与 q2-selectable-image 类，并添加 data-question 属性
     wrapper.innerHTML = `
       <div class="q2-big-block-label">${i}</div>
       <div class="q2-content-block">
+      Select the two images that you believe are most closely related to the audio.
         <audio controls style="display: block; margin: 0 auto 20px auto;">
           <source id="q2_sub${i}_audio" type="audio/mp3">
           Your browser does not support the audio element.
@@ -206,41 +237,65 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="q2-images">
           <div class="q2-image-label">
             <span class="label">A</span>
-            <img id="q2_sub${i}_img_A" alt="Image A" class="q2-square-image">
+            <img data-question="${i}" id="q2_sub${i}_img_A" alt="Image A" class="q2-square-image q2-selectable-image">
           </div>
           <div class="q2-image-label">
             <span class="label">B</span>
-            <img id="q2_sub${i}_img_B" alt="Image B" class="q2-square-image">
+            <img data-question="${i}" id="q2_sub${i}_img_B" alt="Image B" class="q2-square-image q2-selectable-image">
           </div>
           <div class="q2-image-label">
             <span class="label">C</span>
-            <img id="q2_sub${i}_img_C" alt="Image C" class="q2-square-image">
+            <img data-question="${i}" id="q2_sub${i}_img_C" alt="Image C" class="q2-square-image q2-selectable-image">
           </div>
           <div class="q2-image-label">
             <span class="label">D</span>
-            <img id="q2_sub${i}_img_D" alt="Image D" class="q2-square-image">
+            <img data-question="${i}" id="q2_sub${i}_img_D" alt="Image D" class="q2-square-image q2-selectable-image">
           </div>
           <div class="q2-image-label">
             <span class="label">E</span>
-            <img id="q2_sub${i}_img_E" alt="Image E" class="q2-square-image">
+            <img data-question="${i}" id="q2_sub${i}_img_E" alt="Image E" class="q2-square-image q2-selectable-image">
           </div>
         </div>
-      </div>
-      <div class="q2-submit-container">
-        <span class="link-block">
-          <a href="javascript:void(0);" class="external-link button is-normal is-rounded is-dark" onclick="openNewPageQ1(event)">
-            <span class="icon"><i class="fas fa-paper-plane"></i></span>
-            <span>Submit</span>
-          </a>
-        </span>
       </div>
     `;
     container.appendChild(wrapper);
   }
 
-  // 根据 Q2_CONFIG 为每个子问题赋值
+  // 为所有 Q2 图片添加点击事件，允许每个题目最多选择两个图片，
+  // 当已选中2个时，自动取消最早选择的那个
+  document.querySelectorAll("#q2-pairs-container .q2-selectable-image").forEach(img => {
+    img.addEventListener("click", () => {
+      const questionNumber = img.getAttribute("data-question");
+      const currentSelections = selectionsQ2[questionNumber];
+
+      // 如果当前图片已选中，则取消选中
+      if (img.classList.contains("selected")) {
+        img.classList.remove("selected");
+        const idx = currentSelections.indexOf(img.id);
+        if (idx !== -1) {
+          currentSelections.splice(idx, 1);
+        }
+      } else {
+        if (currentSelections.length < 2) {
+          // 少于2个时，直接选中
+          img.classList.add("selected");
+          currentSelections.push(img.id);
+        } else {
+          // 已选中2个，则自动释放最早选择的那个，再选中当前图片
+          const removedId = currentSelections.shift();
+          const removedElem = document.getElementById(removedId);
+          if (removedElem) {
+            removedElem.classList.remove("selected");
+          }
+          img.classList.add("selected");
+          currentSelections.push(img.id);
+        }
+      }
+    });
+  });
+
+  // 根据 Q2_CONFIG 为每个子问题赋值（假设 Q2_CONFIG 已定义，键名为 "sub_1", "sub_2", …, "sub_15"）
   for (let i = 1; i <= 15; i++) {
-    // 取对应的配置（这里假设 Q2_CONFIG 中的键名为 "sub_1", "sub_2", ... "sub_15"）
     const subConfig = Q2_CONFIG["sub_" + i];
     if (subConfig) {
       // 设置音频（通过 source 元素）
@@ -248,7 +303,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (audioSource && subConfig.audio) {
         audioSource.src = subConfig.audio;
       }
-      // 设置图片
+      // 设置图片（A、B、C、D、E）
       const keys = ["A", "B", "C", "D", "E"];
       keys.forEach(key => {
         const imgElement = document.getElementById("q2_sub" + i + "_img_" + key);
@@ -258,9 +313,59 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
-});
+
+  // 添加整个 Q2 区域的提交按钮（仅一个），放在所有题目后面
+  const submitButton = document.createElement("button");
+  submitButton.textContent = "Submit Q1";
+  submitButton.className = "external-link button is-normal is-rounded is-dark";
+  submitButton.addEventListener("click", () => {
+    // 检查每个题目是否恰好选择了两个选项
+    for (let i = 1; i <= 15; i++) {
+      if (selectionsQ2[i].length !== 2) {
+        alert(`Please make sure to select at least two options for question ${i} before submitting.`);
+        return; // 若有未满足条件的题目，则停止提交
+      }
+    }
+
+    // 构造提交数据，每个对象包含：Q2, 题号, 选项（从图片ID中提取，如 "A", "B" 等）
+    const submissionData = [];
+    for (let i = 1; i <= 15; i++) {
+      const selectedOptions = selectionsQ2[i].map(id => {
+        // 图片ID格式： "q2_sub{i}_img_{option}"
+        const parts = id.split("_");
+        return parts[parts.length - 1]; // 获取最后一个部分，即选项字母
+      });
+      submissionData.push({
+        q: "Q1",
+        questionNumber: i,
+        options: selectedOptions
+      });
+    }
+    console.log("Submission Data:", submissionData);
+
+      fetch("http://www.kangyuhao.com/S2LDiT/UserStudy/submitQ1", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(submissionData)
+      })
+      .then(response => response.text())
+      .then(data => {
+        alert("Submission successful! Data has been sent to the our server.");
+      })
+      .catch(error => {
+        alert("Submission failed. Please try again later and contact us.");
+      });
+    });
+    container.appendChild(submitButton);
+  });
+</script>
 
 
+
+
+<script>
 function openNewPageQ1() {
   // 打开新的页面或执行其他操作
   event.preventDefault();

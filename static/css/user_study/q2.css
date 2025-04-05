@@ -1,6 +1,6 @@
 :root {
   /* 默认颜色，可通过 HTML 内联样式覆盖 */
-  --q2-color-question-background: #ddd;
+  --q2-color-question-background: #f0f0f0;
   --q2-color-pair-wrapper: #f0f0f0;
   --q2-color-block-label: rgba(0, 0, 0, 0.7);
   --q2-color-image-label: rgba(0, 0, 0, 0.6);
@@ -64,10 +64,25 @@
 }
 
 .q2-square-image {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
+
+/* Q2 图片默认使用渐变边框 */
+.q2-selectable-image {
+  border: 4px solid;
+  border-image: linear-gradient(120deg, #F5992E 0%, #F17A21 20%, #E45A13 40%, #BB5810 60%, #E45A13 80%, #F17A21 100%) 1;
+  transition: border 0.3s ease;
+  cursor: pointer;
+}
+
+/* Q2 图片选中后变为纯绿色边框 */
+.q2-selectable-image.selected {
+  border-image: none;
+  border-color: green;
+}
+
 
 .q2-submit-container {
   text-align: right;
