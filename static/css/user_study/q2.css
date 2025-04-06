@@ -64,14 +64,17 @@
 }
 
 .q2-square-image {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
 }
-
+.q2-square-image:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 /* Q2 图片默认使用渐变边框 */
 .q2-selectable-image {
-  border: 6px solid;
+  border: 3px solid;
   border-image: linear-gradient(120deg,
     #FFE0BD 0%,   /* 浅肤色，原 #F5992E 的柔和版 */
     #FFC6A0 20%,  /* 浅橙粉，原 #F17A21 的柔和版 */

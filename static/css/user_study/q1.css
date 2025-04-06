@@ -82,10 +82,13 @@
   height: 200px;
   object-fit: cover;
 }
-
+.square-image:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 /* 生成图片默认使用渐变边框 */
 .selectable-image {
-  border: 6px solid;
+  border: 3px solid;
   border-image: linear-gradient(120deg,
     #FFE0BD 0%,
     #FFC6A0 20%,
