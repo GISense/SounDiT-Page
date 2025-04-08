@@ -193,7 +193,7 @@
       }
       console.log("Submission Data:", submissionData);
        // 通过 fetch 将数据提交到本地 8080 端口的后端接口
-      fetch("https://cdn.mori.cyou/S2LDiT/UserStudy/submitQ2", {
+      fetch("https://dit-proxy-wang-junbos-projects.vercel.app/api/q2/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -362,7 +362,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     console.log("Submission Data:", submissionData);
 
-      fetch("https://cdn.mori.cyou/S2LDiT/UserStudy/submitQ1", {
+      fetch("https://dit-proxy-wang-junbos-projects.vercel.app/api/q1", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
