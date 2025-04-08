@@ -364,39 +364,22 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Submission Data:", submissionData);
 
     fetch("https://dit-proxy-crmb42jre-wang-junbos-projects.vercel.app/api/q1", {
-      method: "POST",
-      // 移除了 mode: "no-cors"
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(submissionData)
-    })
-    .then(response => {
-      // 判断响应状态码是否正常
-      if (!response.ok) {
-        // 尝试解析返回的 JSON 数据以提取错误信息
-        return response.json().then(errData => {
-          // 根据错误信息或状态码自定义错误提示
-          if (response.status === 405) {
-            throw new Error(errData.error || "请求方式错误，请使用 POST 方法");
-          } else if (response.status === 500) {
-            throw new Error(errData.error || "服务器发生错误，请稍后再试");
-          } else {
-            throw new Error(errData.error || "提交失败，请重试");
-          }
-        });
-      }
-      // 正常情况下，返回响应文本（或使用 .json() 根据服务端返回数据类型）
-      return response.text();
-    })
-    .then(data => {
-      alert("Submission successful! Data has been sent to our server.");
-    })
-    .catch(error => {
-      // 根据错误提示显示给用户
-      alert("Submission failed: " + error.message);
-    });
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(submissionData)
+      })
+      //如果状态值为 200，表示成功
+      .then(response => {
+        if (response.ok) {
+          alert("Submission successful! Data has been sent to our server.");
+        } else {
+          alert("Submission failed. Please try again later and contact us.");
+        }
+      })
 
+    });
 
     const submitContainer = document.createElement("div");
     submitContainer.style.textAlign = "center"; // 居中按钮
