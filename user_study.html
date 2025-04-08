@@ -193,21 +193,24 @@
       }
       console.log("Submission Data:", submissionData);
        // 通过 fetch 将数据提交到本地 8080 端口的后端接口
-      fetch("https://dit-proxy-wang-junbos-projects.vercel.app/api/q2/", {
+
+
+    fetch("https://dit-proxy-wang-junbos-projects.vercel.app/api/q2", {
         method: "POST",
-        mode: "no-cors",
         headers: {
           "Content-Type": "application/json"
         },
         body: JSON.stringify(submissionData)
       })
-      .then(response => response.text())
-      .then(data => {
-        alert("Submission successful! Data has been sent to our server.");
+      //如果状态值为 200，表示成功
+      .then(response => {
+        if (response.ok) {
+          alert("Submission successful! Data has been sent to our server.");
+        } else {
+          alert("Submission failed. Please try again later and contact us.");
+        }
       })
-      .catch(error => {
-        alert("Submission failed. Please try again later and contact us.");
-      });
+
     });
     const submitContainer = document.createElement("div");
     submitContainer.style.textAlign = "center"; // 居中按钮
