@@ -60,7 +60,7 @@
   <div class="question-background">
     <div class="container">
       <h2 class="title is-3";>
-        <span class="q1-gradient-text">Q2: Choose the generated landscape that best matches the ground truth.</span>
+        <span class="q1-gradient-text">Q2: Choose the one generated landscape that best matches the ground truth.</span>
 
       </h2>
         <!-- 提交按钮，风格参考给定样例 -->
@@ -91,7 +91,13 @@
 
       wrapper.innerHTML = `
         <div class="big-block-label">${i}</div>
+        <div style="text-align: center; font-size: 25px;margin-bottom: 40px;">
+          Select <span style="color: red;">one</span> generated landscape that best matches the ground truth.
+        </div>
+
         <div class="pair">
+
+
           <div class="left-section">
             <h3 class="subtitle" style="text-align: center;">Ground Truth</h3>
             <div class="images">
@@ -103,6 +109,8 @@
               </div>
             </div>
           </div>
+
+
           <div class="right-section">
             <h3 class="subtitle" style="text-align: center;">Generated Landscape</h3>
 
@@ -248,8 +256,8 @@ document.addEventListener("DOMContentLoaded", () => {
     wrapper.innerHTML = `
       <div class="q2-big-block-label">${i}</div>
       <div class="q2-content-block">
-        <div style="text-align: center; margin-bottom: 16px;">
-          Select the two images that you believe are most closely related to the audio.
+        <div style="text-align: center; font-size: 20px;margin-bottom: 16px;">
+          Select the <span style="color: red;">two</span> images that you believe are most closely related to the audio.
         </div>
         <audio controls style="display: block; margin: 0 auto 20px auto;">
           <source id="q2_sub${i}_audio" type="audio/mp3">

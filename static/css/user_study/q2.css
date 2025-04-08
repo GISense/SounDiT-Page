@@ -85,6 +85,7 @@
   ) 1;
   transition: border 0.3s ease;
   cursor: pointer;
+  background-color: transparent;
 }
 .q2-selectable-image:hover {
   border-image: linear-gradient(120deg,
@@ -98,10 +99,15 @@
 }
 /* Q2 图片选中后变为纯绿色边框 */
 .q2-selectable-image.selected {
+  border: 8px solid;
   border-image: none;
   border-color: green;
 }
-
+.q2-square-image.selected,
+.q2-selectable-image.selected {
+  transform: translateY(-18px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 
 .q2-submit-container {
   text-align: right;
@@ -132,16 +138,17 @@
 
 .q2-custom-button {
   background-color: #FFB08C;         /* 浅橙色背景 */
-  color: #ffffff;                    /* 白色文字 */
+  color: #000033; /* 更深的蓝黑色文字 */
+
   border: none;                      /* 去边框 */
   padding: 12px 24px;                /* 内边距 */
-  font-size: 18px;                   /* 字体大小 */
+  font-size: 25px;                   /* 字体大小 */
   cursor: pointer;                   /* 鼠标悬停效果 */
   transition: background-color 0.3s ease;
 }
 
 .q2-custom-button:hover {
-  background-color: #FF935F;         /* 悬停时颜色更深一点 */
+  background-color: #000011;         /* 悬停时颜色更深一点 */
   transform: translateY(-4px);       /* 悬停上浮 */
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);  /* 添加阴影 */
 }
