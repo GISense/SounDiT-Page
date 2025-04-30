@@ -47,7 +47,7 @@
   <div class="q2-question-background">
     <div class="container">
       <h2 class="title is-3">
-        <span class="q2-gradient-text">Q1: Select the two images that you believe are most closely related to the audio clip.</span>
+        <span class="q2-gradient-text">Q1: Select the image that you believe are most closely related to the audio clip.</span>
       </h2>
       <!-- 内层统一背景容器 -->
       <div id="q2-pairs-container"></div>
@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="q2-big-block-label">${i}</div>
       <div class="q2-content-block">
         <div style="text-align: center; font-size: 20px;margin-bottom: 16px;">
-          Select the <span style="color: red;">two</span> images that you believe are most closely related to the audio.
+          Select the image that you believe are most closely related to the audio.
         </div>
         <audio controls style="display: block; margin: 0 auto 20px auto;">
           <source id="q2_sub${i}_audio" type="audio/mp3">
@@ -292,36 +292,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 为所有 Q2 图片添加点击事件，允许每个题目最多选择两个图片，
   // 当已选中2个时，自动取消最早选择的那个
-  document.querySelectorAll("#q2-pairs-container .q2-selectable-image").forEach(img => {
-    img.addEventListener("click", () => {
-      const questionNumber = img.getAttribute("data-question");
-      const currentSelections = selectionsQ2[questionNumber];
+document.querySelectorAll("#q2-pairs-container .q2-selectable-image").forEach(img => {
+  img.addEventListener("click", () => {
+    const questionNumber = img.getAttribute("data-question");
 
-      // 如果当前图片已选中，则取消选中
-      if (img.classList.contains("selected")) {
-        img.classList.remove("selected");
-        const idx = currentSelections.indexOf(img.id);
-        if (idx !== -1) {
-          currentSelections.splice(idx, 1);
-        }
-      } else {
-        if (currentSelections.length < 2) {
-          // 少于2个时，直接选中
-          img.classList.add("selected");
-          currentSelections.push(img.id);
-        } else {
-          // 已选中2个，则自动释放最早选择的那个，再选中当前图片
-          const removedId = currentSelections.shift();
-          const removedElem = document.getElementById(removedId);
-          if (removedElem) {
-            removedElem.classList.remove("selected");
-          }
-          img.classList.add("selected");
-          currentSelections.push(img.id);
-        }
+    // 初始化当前问题的选中状态数组
+    if (!selectionsQ2[questionNumber]) {
+      selectionsQ2[questionNumber] = [];
+    }
+    const currentSelections = selectionsQ2[questionNumber];
+
+    // 如果当前图片已选中，则取消选中
+    if (img.classList.contains("selected")) {
+      img.classList.remove("selected");
+      const idx = currentSelections.indexOf(img.id);
+      if (idx !== -1) {
+        currentSelections.splice(idx, 1);
       }
-    });
+    } else {
+      // 清除当前问题下所有已选中的图片
+      currentSelections.forEach(id => {
+        const elem = document.getElementById(id);
+        if (elem) elem.classList.remove("selected");
+      });
+      currentSelections.length = 0; // 清空数组
+
+      // 选中当前图片
+      img.classList.add("selected");
+      currentSelections.push(img.id);
+    }
   });
+});
+
 
   // 根据 Q2_CONFIG 为每个子问题赋值（假设 Q2_CONFIG 已定义，键名为 "sub_1", "sub_2", …, "sub_15"）
   for (let i = 1; i <= 15; i++) {
@@ -352,8 +354,8 @@ document.addEventListener("DOMContentLoaded", () => {
   submitButton.addEventListener("click", () => {
     // 检查每个题目是否恰好选择了两个选项
     for (let i = 1; i <= 15; i++) {
-      if (selectionsQ2[i].length !== 2) {
-        alert(`Please make sure to select at least two options for question ${i} before submitting.`);
+      if (selectionsQ2[i].length !== 1) {
+        alert(`Please make sure to select one option for question ${i} before submitting.`);
         return; // 若有未满足条件的题目，则停止提交
       }
     }
