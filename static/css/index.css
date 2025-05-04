@@ -81,7 +81,12 @@ body {
 .author-block {
   display: inline-block;
 }
-
+.author-block.no-link {
+  pointer-events: none;  /* 禁止点击 */
+  color: inherit;        /* 保持颜色一致 */
+  text-decoration: none; /* 去除下划线 */
+  cursor: default;       /* 鼠标样式为默认 */
+}
 .publication-banner img {
 }
 
