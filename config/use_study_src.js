@@ -57,13 +57,13 @@ const Q1_CONFIG = {
   },
   sub_6: {
     groundTruth: {
-      A: "static/user_study/Q1/sonicurban/731/ground_truth/79156.jpg",
-      B: "static/user_study/Q1/sonicurban/731/surrounding/79171.jpg",
+      A: "static/user_study/Q1/sonicurban/930/ground_truth/930.jpg",
+      B: "static/user_study/Q1/sonicurban/930/surrounding/945.jpg",
     },
     generatedLandscape: {
       A: "static/user_study/Q1/aporee_49648_56611/generated/133430.jpg",
       B: "static/user_study/Q1/aporee_6924_8612/generated/79171.jpg",
-      C: "static/user_study/Q1/sonicurban/generated/149338.jpg"
+      C: "static/user_study/Q1/sonicurban/930/generated/930.jpg"
     }
   },
   sub_7: {
@@ -79,8 +79,8 @@ const Q1_CONFIG = {
   },
   sub_8: {
     groundTruth: {
-      A: "static/user_study/Q1/aporee_6950_8641/ground_truth/301994.jpg",
-      B: "static/user_study/Q1/aporee_6950_8641/ground_truth/302003.jpg"
+      A: "static/user_study/Q1/sonicurban/930/ground_truth/930.jpg",
+      B: "static/user_study/Q1/sonicurban/930/surrounding/945.jpg",
     },
     generatedLandscape: {
       A: "static/user_study/Q1/aporee_6950_8641/generated/301994.jpg",
@@ -101,8 +101,8 @@ const Q1_CONFIG = {
   },
   sub_10: {
     groundTruth: {
-      A: "static/user_study/Q1/aporee_47964_54529/ground_truth/70122.jpg",
-      B: "static/user_study/Q1/aporee_47964_54529/ground_truth/70138.jpg"
+      A: "static/user_study/Q1/sonicurban/930/ground_truth/930.jpg",
+      B: "static/user_study/Q1/sonicurban/930/surrounding/945.jpg",
     },
     generatedLandscape: {
       A: "static/user_study/Q1/aporee_47964_54529/generated/70122.jpg",
@@ -123,8 +123,8 @@ const Q1_CONFIG = {
   },
   sub_12: {
     groundTruth: {
-      A: "static/user_study/Q1/aporee_45778_51990/ground_truth/186671.jpg",
-      B: "static/user_study/Q1/aporee_45778_51990/ground_truth/186676.jpg"
+      A: "static/user_study/Q1/sonicurban/930/ground_truth/930.jpg",
+      B: "static/user_study/Q1/sonicurban/930/surrounding/945.jpg",
     },
     generatedLandscape: {
       A: "static/user_study/Q1/aporee_47964_54529/generated/70138.jpg",
@@ -145,8 +145,8 @@ const Q1_CONFIG = {
   },
   sub_14: {
     groundTruth: {
-      A: "static/user_study/Q1/aporee_16984_19777/ground_truth/15170.jpg",
-      B: "static/user_study/Q1/aporee_16984_19777/ground_truth/15172.jpg"
+      A: "static/user_study/Q1/sonicurban/930/ground_truth/930.jpg",
+      B: "static/user_study/Q1/sonicurban/930/surrounding/945.jpg",
     },
     generatedLandscape: {
       A: "static/user_study/Q1/aporee_14223_16560/generated/332017.jpg",
