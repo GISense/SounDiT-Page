@@ -12,11 +12,11 @@ const Q1_CONFIG = {
   },
   sub_2: {
     groundTruth: {
-        A: "static/user_study/Q1/aporee_3740_5054/ground_truth/275621.jpg",
-        B: "static/user_study/Q1/aporee_3740_5054/ground_truth/275634.jpg"
+        A: "static/user_study/Q1/sonicurban/119/ground_truth/119.jpg",
+        B: "static/user_study/Q1/sonicurban/119/surrounding/121.jpg"
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_3740_5054/generated/275621.jpg",
+      A: "static/user_study/Q1/sonicurban/119/generated/119.jpg",
       B: "static/user_study/Q1/aporee_4163_5523/generated/193711.jpg",
       C: "static/user_study/Q1/aporee_4483_5862/generated/80063.jpg"
     }
@@ -34,11 +34,11 @@ const Q1_CONFIG = {
   },
   sub_4: {
     groundTruth: {
-      A: "static/user_study/Q1/aporee_6166_7692/ground_truth/138519.jpg",
-      B: "static/user_study/Q1/aporee_6166_7692/ground_truth/138538.jpg"
+      A: "static/user_study/Q1/sonicurban/731/ground_truth/731.jpg",
+      B: "static/user_study/Q1/sonicurban/731/surrounding/732.jpg"
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_6166_7692/generated/138519.jpg",
+      A: "static/user_study/Q1/sonicurban/731/generated/731.jpg",
       B: "static/user_study/Q1/aporee_6367_7912/generated/146813.jpg",
       C: "static/user_study/Q1/aporee_4062_5420/generated/104133.jpg"
 
@@ -57,13 +57,13 @@ const Q1_CONFIG = {
   },
   sub_6: {
     groundTruth: {
-      A: "static/user_study/Q1/aporee_6924_8612/ground_truth/79156.jpg",
-      B: "static/user_study/Q1/aporee_6924_8612/ground_truth/79171.jpg",
+      A: "static/user_study/Q1/sonicurban/731/ground_truth/79156.jpg",
+      B: "static/user_study/Q1/sonicurban/731/surrounding/79171.jpg",
     },
     generatedLandscape: {
       A: "static/user_study/Q1/aporee_49648_56611/generated/133430.jpg",
       B: "static/user_study/Q1/aporee_6924_8612/generated/79171.jpg",
-      C: "static/user_study/Q1/aporee_49399_56318/generated/149338.jpg"
+      C: "static/user_study/Q1/sonicurban/generated/149338.jpg"
     }
   },
   sub_7: {
