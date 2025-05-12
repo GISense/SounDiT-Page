@@ -178,12 +178,12 @@ const Q2_CONFIG = {
     }
   },
   sub_2: {
-    audio: "static/user_study/Q2/audio/2294.wav",
+    audio: "static/user_study/Q2/sonicurban/audio/9816.wav",
     images: {
       A: "static/user_study/Q1/aporee_49631_56593/generated/188052.jpg",
-      B: "static/user_study/Q2/generated/2294.jpg",
+      B: "static/user_study/Q2/generated/sonicurban/9816.jpg",
       C: "static/user_study/Q1/aporee_4163_5523/generated/193711.jpg",
-      D: "static/user_study/Q2/ground_truth/2294.jpg",
+      D: "static/user_study/Q2/ground_truth/sonicurban/9816.jpg",
       E: "static/user_study/Q1/aporee_6806_8478/generated/49608.jpg"
     }
   },
@@ -198,13 +198,13 @@ const Q2_CONFIG = {
     }
   },
   sub_4: {
-    audio: "static/user_study/Q2/audio/62750.wav",
+    audio: "static/user_study/Q2/sonicurban/audio/11154.wav",
     images: {
       A: "static/user_study/Q1/aporee_1472_2019/generated/39400.jpg",
-      B: "static/user_study/Q2/ground_truth/62750.jpg",
+      B: "static/user_study/Q2/ground_truth/sonicurban/11154.jpg",
       C: "static/user_study/Q1/aporee_4163_5523/generated/193723.jpg",
       D: "static/user_study/Q1/aporee_3740_5054/generated/275641.jpg",
-      E: "static/user_study/Q2/generated/62750.jpg"
+      E: "static/user_study/Q2/generated/sonicurban/11154.jpg"
     }
   },
   sub_5: {
@@ -218,12 +218,12 @@ const Q2_CONFIG = {
     }
   },
   sub_6: {
-    audio: "static/user_study/Q2/audio/158639.wav",
+    audio: "static/user_study/Q2/sonicurban/audio/11338.wav",
     images: {
-      A: "static/user_study/Q2/generated/158639.jpg",
+      A: "static/user_study/Q2/generated/sonicurban/11338.jpg",
       B: "static/user_study/Q1/aporee_1862_2667/generated/103904.jpg",
       C: "static/user_study/Q1/aporee_3740_5054/generated/275621.jpg",
-      D: "static/user_study/Q2/ground_truth/158639.jpg",
+      D: "static/user_study/Q2/ground_truth/sonicurban/11338.jpg",
       E: "static/user_study/Q1/aporee_49399_56318/generated/149338.jpg"
     }
   },
@@ -238,11 +238,11 @@ const Q2_CONFIG = {
     }
   },
   sub_8: {
-    audio: "static/user_study/Q2/audio/172440.wav",
+    audio: "static/user_study/Q2/sonicurban/audio/13115.wav",
     images: {
       A: "static/user_study/generated_pool/217098.jpg",
       B: "static/user_study/generated_pool/238491.jpg",
-      C: "static/user_study/Q2/ground_truth/172440.jpg",
+      C: "static/user_study/Q2/ground_truth/sonicurban/13115.jpg",
       D: "static/user_study/generated_pool/239708.jpg",
       E: "static/user_study/Q2/generated/172440.jpg"
     }
@@ -258,11 +258,11 @@ const Q2_CONFIG = {
     }
   },
   sub_10: {
-    audio: "static/user_study/Q2/audio/181017.wav",
+    audio: "static/user_study/Q2/sonicurban/audio/14117.wav",
     images: {
-      A: "static/user_study/Q2/generated/181017.jpg",
+      A: "static/user_study/Q2/generated/sonicurban/14117.jpg",
       B: "static/user_study/generated_pool/288844.jpg",
-      C: "static/user_study/Q2/ground_truth/181017.jpg",
+      C: "static/user_study/Q2/ground_truth/sonicurban/14117.jpg",
       D: "static/user_study/generated_pool/292106.jpg",
       E: "static/user_study/generated_pool/294868.jpg"
     }
@@ -278,11 +278,11 @@ const Q2_CONFIG = {
     }
   },
   sub_12: {
-    audio: "static/user_study/Q2/audio/4733.wav",
+    audio: "static/user_study/Q2/sonicurban/audio/15571.wav",
     images: {
-      A: "static/user_study/Q2/generated/4733.jpg",
+      A: "static/user_study/Q2/generated/sonicurban/15571.jpg",
       B: "static/user_study/generated_pool/298937.jpg",
-      C: "static/user_study/Q2/ground_truth/4733.jpg",
+      C: "static/user_study/Q2/ground_truth/sonicurban/15571.jpg",
       D: "static/user_study/generated_pool/299388.jpg",
       E: "static/user_study/generated_pool/302242.jpg"
     }
@@ -298,12 +298,12 @@ const Q2_CONFIG = {
     }
   },
   sub_14: {
-    audio: "static/user_study/Q2/audio/287782.wav",
+    audio: "static/user_study/Q2/sonicurban/audio/21.wav",
     images: {
       A: "static/user_study/generated_pool/305139.jpg",
-      B: "static/user_study/Q2/generated/287782.jpg",
+      B: "static/user_study/Q2/generated/sonicurban/21.jpg",
       C: "static/user_study/generated_pool/313705.jpg",
-      D: "static/user_study/Q2/ground_truth/287782.jpg",
+      D: "static/user_study/Q2/ground_truth/sonicurban/21.jpg",
       E: "static/user_study/generated_pool/314535.jpg"
     }
   },
