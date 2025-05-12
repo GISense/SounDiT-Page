@@ -170,11 +170,7 @@ const Q2_CONFIG = {
   sub_1: {
     audio: "static/user_study/Q2/audio/157.wav",
     images: {
-      A: "static/user_study/Q1/aporee_4091_5449/generated/285926.jpg",
-      B: "static/user_study/Q1/aporee_6648_8206/generated/311066.jpg",
-      C: "static/user_study/Q2/generated/157.jpg",
-      D: "static/user_study/Q1/aporee_6903_8580/generated/165142.jpg",
-      E: "static/user_study/Q2/ground_truth/157.jpg"
+
     }
   },
   sub_2: {
