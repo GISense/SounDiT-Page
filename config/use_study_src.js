@@ -79,12 +79,12 @@ const Q1_CONFIG = {
   },
   sub_8: {
     groundTruth: {
-      A: "static/user_study/Q1/sonicurban/930/ground_truth/930.jpg",
-      B: "static/user_study/Q1/sonicurban/930/surrounding/945.jpg",
+      A: "static/user_study/Q1/sonicurban/1792/ground_truth/1792.jpg",
+      B: "static/user_study/Q1/sonicurban/1792/surrounding/1801.jpg",
     },
     generatedLandscape: {
       A: "static/user_study/Q1/aporee_6950_8641/generated/301994.jpg",
-      B: "static/user_study/Q1/aporee_6712_8275/generated/174353.jpg",
+      B: "static/user_study/Q1/sonicurban/1792/generated/1792.jpg",
       C: "static/user_study/Q1/aporee_4163_5523/generated/193723.jpg"
     }
   },
@@ -101,13 +101,13 @@ const Q1_CONFIG = {
   },
   sub_10: {
     groundTruth: {
-      A: "static/user_study/Q1/sonicurban/930/ground_truth/930.jpg",
-      B: "static/user_study/Q1/sonicurban/930/surrounding/945.jpg",
+      A: "static/user_study/Q1/sonicurban/3130/ground_truth/3130.jpg",
+      B: "static/user_study/Q1/sonicurban/3130/surrounding/3131.jpg",
     },
     generatedLandscape: {
       A: "static/user_study/Q1/aporee_47964_54529/generated/70122.jpg",
       B: "static/user_study/Q1/aporee_4091_5449/generated/285917.jpg",
-      C: "static/user_study/Q1/aporee_6427_7972/generated/33926.jpg"
+      C: "static/user_study/Q1/sonicurban/3130/generatec/3130.jpg"
     }
   },
   sub_11: {
