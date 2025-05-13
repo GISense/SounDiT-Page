@@ -168,21 +168,21 @@ const Q1_CONFIG = {
 };
 const Q2_CONFIG = {
   sub_1: {
-    audio: "static/user_study/Q2/audio/13746.mp3",
+    audio: "static/user_study/Q2/audio/331030.wav",
     images: {
       A: "static/user_study/Q1/aporee_4091_5449/generated/285926.png",
-      B: "static/user_study/Q1/aporee_6648_8206/generated/311066.png",
-      C: "static/user_study/Q2/generated/13746.png",
+      B: "static/user_study/generated_pool/288116.jpg",
+      C: "static/user_study/Q2/generated/331030.png",
       D: "static/user_study/Q1/aporee_6903_8580/generated/165142.jpg",
       // E: "static/user_study/Q2/ground_truth/157.jpg"
     }
   },
   sub_2: {
-    audio: "static/user_study/Q2/audio/sonicurban/9816.wav",
+    audio: "static/user_study/Q2/audio/sonicurban/17983.wav",
     images: {
       A: "static/user_study/Q1/aporee_49631_56593/generated/188052.png",
-      B: "static/user_study/Q2/generated/sonicurban/9816.jpg",
-      C: "static/user_study/Q1/aporee_4163_5523/generated/193711.png",
+      B: "static/user_study/Q2/generated/sonicurban/17983.jpg",
+      C: "static/user_study/Q2/generated/sonicurban/14117.jpg",
       // D: "static/user_study/Q2/ground_truth/sonicurban/9816.jpg",
       D: "static/user_study/Q1/aporee_6806_8478/generated/49608.png"
     }
