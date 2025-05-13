@@ -145,12 +145,12 @@ const Q1_CONFIG = {
   },
   sub_14: {
     groundTruth: {
-      A: "static/user_study/Q1/sonicurban/930/ground_truth/930.jpg",
-      B: "static/user_study/Q1/sonicurban/930/surrounding/945.jpg",
+      A: "static/user_study/Q1/sonicurban/9628/ground_truth/9628.jpg",
+      B: "static/user_study/Q1/sonicurban/9628/surrounding/9634.jpg",
     },
     generatedLandscape: {
       A: "static/user_study/Q1/aporee_14223_16560/generated/332017.jpg",
-      B: "static/user_study/Q1/sonicurban/4247/generated/4247.jpg",
+      B: "static/user_study/Q1/sonicurban/9628/generated/9628.jpg",
       C: "static/user_study/Q1/aporee_16984_19777/generated/15172.jpg"
     }
   },
