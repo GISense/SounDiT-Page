@@ -72,7 +72,7 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/aporee_49645_56608/ground_truth/25717.jpg"
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_6462_8009/generated/180280.png",
+      A: "static/user_study/Q1/aporee_1472_2019/generated/39400.jpg",
       B: "static/user_study/Q1/aporee_49591_56549/generated/55874.png",
       C: "static/user_study/Q1/aporee_49645_56608/generated/25717.png"
     }
