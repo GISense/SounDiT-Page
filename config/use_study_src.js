@@ -228,13 +228,13 @@ const Q2_CONFIG = {
     }
   },
   sub_7: {
-    audio: "static/user_study/Q2/audio/186158.wav",
+    audio: "static/user_study/Q2/audio/329053.wav",
     images: {
-      A: "static/user_study/generated_pool/299388.png",
+      A: "static/user_study/generated_pool/94702.png",
       // B: "static/user_study/Q2/ground_truth/186158.jpg",
-      B: "static/user_study/Q2/generated/186158.png",
-      C: "static/user_study/generated_pool/204085.png",
-      D: "static/user_study/generated_pool/213481.png"
+      B: "static/user_study/Q2/generated/329053.png",
+      C: "static/user_study/generated_pool/297664.png",
+      D: "static/user_study/generated_pool/sonicUrban/8172.jpg"
     }
   },
   sub_8: {
