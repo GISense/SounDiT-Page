@@ -174,7 +174,7 @@ const Q2_CONFIG = {
       B: "static/user_study/Q1/aporee_6648_8206/generated/311066.jpg",
       C: "static/user_study/Q2/generated/157.jpg",
       D: "static/user_study/Q1/aporee_6903_8580/generated/165142.jpg",
-      E: "static/user_study/Q2/ground_truth/157.jpg"
+      // E: "static/user_study/Q2/ground_truth/157.jpg"
     }
   },
   sub_2: {
@@ -183,8 +183,8 @@ const Q2_CONFIG = {
       A: "static/user_study/Q1/aporee_49631_56593/generated/188052.jpg",
       B: "static/user_study/Q2/generated/sonicurban/9816.jpg",
       C: "static/user_study/Q1/aporee_4163_5523/generated/193711.jpg",
-      D: "static/user_study/Q2/ground_truth/sonicurban/9816.jpg",
-      E: "static/user_study/Q1/aporee_6806_8478/generated/49608.jpg"
+      // D: "static/user_study/Q2/ground_truth/sonicurban/9816.jpg",
+      D: "static/user_study/Q1/aporee_6806_8478/generated/49608.jpg"
     }
   },
   sub_3: {
@@ -193,28 +193,28 @@ const Q2_CONFIG = {
       A: "static/user_study/Q2/generated/243449.jpg",
       B: "static/user_study/generated_pool/140202.jpg",
       C: "static/user_study/generated_pool/150244.jpg",
-      D: "static/user_study/Q2/ground_truth/243449.jpg",
-      E: "static/user_study/generated_pool/157643.jpg"
+      // D: "static/user_study/Q2/ground_truth/243449.jpg",
+      D: "static/user_study/generated_pool/157643.jpg"
     }
   },
   sub_4: {
     audio: "static/user_study/Q2/audio/sonicurban/11154.wav",
     images: {
       A: "static/user_study/Q1/aporee_1472_2019/generated/39400.jpg",
-      B: "static/user_study/Q2/ground_truth/sonicurban/11154.jpg",
-      C: "static/user_study/Q1/aporee_4163_5523/generated/193723.jpg",
-      D: "static/user_study/Q1/aporee_3740_5054/generated/275641.jpg",
-      E: "static/user_study/Q2/generated/sonicurban/11154.jpg"
+      // B: "static/user_study/Q2/ground_truth/sonicurban/11154.jpg",
+      B: "static/user_study/Q1/aporee_4163_5523/generated/193723.jpg",
+      C: "static/user_study/Q1/aporee_3740_5054/generated/275641.jpg",
+      D: "static/user_study/Q2/generated/sonicurban/11154.jpg"
     }
   },
   sub_5: {
     audio: "static/user_study/Q2/audio/70746.wav",
     images: {
-      A: "static/user_study/Q2/ground_truth/70746.jpg",
-      B: "static/user_study/generated_pool/171304.jpg",
-      C: "static/user_study/Q2/generated/70746.jpg",
-      D: "static/user_study/generated_pool/180155.jpg",
-      E: "static/user_study/generated_pool/193038.jpg"
+      // A: "static/user_study/Q2/ground_truth/70746.jpg",
+      A: "static/user_study/generated_pool/171304.jpg",
+      B: "static/user_study/Q2/generated/70746.jpg",
+      C: "static/user_study/generated_pool/180155.jpg",
+      D: "static/user_study/generated_pool/193038.jpg"
     }
   },
   sub_6: {
@@ -223,8 +223,8 @@ const Q2_CONFIG = {
       A: "static/user_study/Q2/generated/sonicurban/11338.jpg",
       B: "static/user_study/Q1/aporee_1862_2667/generated/103904.jpg",
       C: "static/user_study/Q1/aporee_3740_5054/generated/275621.jpg",
-      D: "static/user_study/Q2/ground_truth/sonicurban/11338.jpg",
-      E: "static/user_study/Q1/aporee_49399_56318/generated/149338.jpg"
+      // D: "static/user_study/Q2/ground_truth/sonicurban/11338.jpg",
+      D: "static/user_study/Q1/aporee_49399_56318/generated/149338.jpg"
     }
   },
   sub_7: {
@@ -232,9 +232,9 @@ const Q2_CONFIG = {
     images: {
       A: "static/user_study/generated_pool/201499.jpg",
       B: "static/user_study/Q2/ground_truth/186158.jpg",
-      C: "static/user_study/Q2/generated/186158.jpg",
-      D: "static/user_study/generated_pool/204085.jpg",
-      E: "static/user_study/generated_pool/213481.jpg"
+      // C: "static/user_study/Q2/generated/186158.jpg",
+      C: "static/user_study/generated_pool/204085.jpg",
+      D: "static/user_study/generated_pool/213481.jpg"
     }
   },
   sub_8: {
@@ -242,19 +242,19 @@ const Q2_CONFIG = {
     images: {
       A: "static/user_study/generated_pool/217098.jpg",
       B: "static/user_study/generated_pool/238491.jpg",
-      C: "static/user_study/Q2/ground_truth/sonicurban/13115.jpg",
-      D: "static/user_study/generated_pool/239708.jpg",
-      E: "static/user_study/Q2/generated/172440.jpg"
+      // C: "static/user_study/Q2/ground_truth/sonicurban/13115.jpg",
+      C: "static/user_study/generated_pool/239708.jpg",
+      D: "static/user_study/Q2/generated/172440.jpg"
     }
   },
   sub_9: {
     audio: "static/user_study/Q2/audio/268504.wav",
     images: {
       A: "static/user_study/generated_pool/94702.jpg",
-      B: "static/user_study/Q2/ground_truth/268504.jpg",
-      C: "static/user_study/generated_pool/496.jpg",
-      D: "static/user_study/Q2/generated/268504.jpg",
-      E: "static/user_study/generated_pool/3713.jpg"
+      // B: "static/user_study/Q2/ground_truth/268504.jpg",
+      B: "static/user_study/generated_pool/496.jpg",
+      C: "static/user_study/Q2/generated/268504.jpg",
+      D: "static/user_study/generated_pool/3713.jpg"
     }
   },
   sub_10: {
@@ -262,9 +262,9 @@ const Q2_CONFIG = {
     images: {
       A: "static/user_study/Q2/generated/sonicurban/14117.jpg",
       B: "static/user_study/generated_pool/288844.jpg",
-      C: "static/user_study/Q2/ground_truth/sonicurban/14117.jpg",
-      D: "static/user_study/generated_pool/292106.jpg",
-      E: "static/user_study/generated_pool/294868.jpg"
+      // C: "static/user_study/Q2/ground_truth/sonicurban/14117.jpg",
+      C: "static/user_study/generated_pool/292106.jpg",
+      D: "static/user_study/generated_pool/294868.jpg"
     }
   },
   sub_11: {
@@ -274,7 +274,7 @@ const Q2_CONFIG = {
       B: "static/user_study/generated_pool/298575.jpg",
       C: "static/user_study/generated_pool/297664.jpg",
       D: "static/user_study/Q2/generated/188052.jpg",
-      E: "static/user_study/Q2/ground_truth/188052.jpg"
+      // E: "static/user_study/Q2/ground_truth/188052.jpg"
     }
   },
   sub_12: {
@@ -282,19 +282,19 @@ const Q2_CONFIG = {
     images: {
       A: "static/user_study/Q2/generated/sonicurban/15571.jpg",
       B: "static/user_study/generated_pool/298937.jpg",
-      C: "static/user_study/Q2/ground_truth/sonicurban/15571.jpg",
-      D: "static/user_study/generated_pool/299388.jpg",
-      E: "static/user_study/generated_pool/302242.jpg"
+      // C: "static/user_study/Q2/ground_truth/sonicurban/15571.jpg",
+      C: "static/user_study/generated_pool/299388.jpg",
+      D: "static/user_study/generated_pool/302242.jpg"
     }
   },
   sub_13: {
     audio: "static/user_study/Q2/audio/283426.wav",
     images: {
       A: "static/user_study/generated_pool/302363.jpg",
-      B: "static/user_study/Q2/ground_truth/283426.jpg",
-      C: "static/user_study/generated_pool/303061.jpg",
-      D: "static/user_study/generated_pool/303488.jpg",
-      E: "static/user_study/Q2/generated/283426.jpg"
+      // B: "static/user_study/Q2/ground_truth/283426.jpg",
+      B: "static/user_study/generated_pool/303061.jpg",
+      C: "static/user_study/generated_pool/303488.jpg",
+      D: "static/user_study/Q2/generated/283426.jpg"
     }
   },
   sub_14: {
@@ -303,18 +303,18 @@ const Q2_CONFIG = {
       A: "static/user_study/generated_pool/305139.jpg",
       B: "static/user_study/Q2/generated/sonicurban/21.jpg",
       C: "static/user_study/generated_pool/313705.jpg",
-      D: "static/user_study/Q2/ground_truth/sonicurban/21.jpg",
-      E: "static/user_study/generated_pool/314535.jpg"
+      // D: "static/user_study/Q2/ground_truth/sonicurban/21.jpg",
+      D: "static/user_study/generated_pool/314535.jpg"
     }
   },
   sub_15: {
     audio: "static/user_study/Q2/audio/296357.wav",
     images: {
-      A: "static/user_study/Q2/ground_truth/296357.jpg",
-      B: "static/user_study/generated_pool/296237.jpg",
-      C: "static/user_study/Q2/generated/296357.jpg",
-      D: "static/user_study/generated_pool/292485.jpg",
-      E: "static/user_study/generated_pool/288116.jpg"
+      // A: "static/user_study/Q2/ground_truth/296357.jpg",
+      A: "static/user_study/generated_pool/296237.jpg",
+      B: "static/user_study/Q2/generated/296357.jpg",
+      C: "static/user_study/generated_pool/292485.jpg",
+      D: "static/user_study/generated_pool/288116.jpg"
     }
   }
 };
