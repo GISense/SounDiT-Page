@@ -5,9 +5,9 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/aporee_1472_2019/ground_truth/39405.jpg"
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_1472_2019/generated/39400.jpg",
-      B: "static/user_study/Q1/aporee_16984_19777/generated/15170.jpg",
-      C: "static/user_study/Q1/aporee_6122_7648/generated/58314.jpg"
+      A: "static/user_study/Q1/aporee_1472_2019/generated/39400.png",
+      B: "static/user_study/Q1/aporee_16984_19777/generated/15170.png",
+      C: "static/user_study/Q1/aporee_6122_7648/generated/58314.png"
     }
   },
   sub_2: {
@@ -17,8 +17,8 @@ const Q1_CONFIG = {
     },
     generatedLandscape: {
       A: "static/user_study/Q1/sonicurban/119/generated/119.jpg",
-      B: "static/user_study/Q1/aporee_4163_5523/generated/193711.jpg",
-      C: "static/user_study/Q1/aporee_4483_5862/generated/80063.jpg"
+      B: "static/user_study/Q1/aporee_4163_5523/generated/193711.png",
+      C: "static/user_study/Q1/aporee_4483_5862/generated/80063.png"
     }
   },
   sub_3: {
@@ -27,9 +27,9 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/aporee_4091_5449/ground_truth/285926.jpg"
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_6244_7772/generated/301514.jpg",
-      B: "static/user_study/Q1/aporee_4091_5449/generated/285926.jpg",
-      C: "static/user_study/Q1/aporee_49149_56305/generated/216275.jpg"
+      A: "static/user_study/Q1/aporee_6244_7772/generated/301514.png",
+      B: "static/user_study/Q1/aporee_4091_5449/generated/285926.png",
+      C: "static/user_study/Q1/aporee_49149_56305/generated/216275.png"
     }
   },
   sub_4: {
@@ -39,8 +39,8 @@ const Q1_CONFIG = {
     },
     generatedLandscape: {
       A: "static/user_study/Q1/sonicurban/731/generated/731.jpg",
-      B: "static/user_study/Q1/aporee_6367_7912/generated/146813.jpg",
-      C: "static/user_study/Q1/aporee_4062_5420/generated/104133.jpg"
+      B: "static/user_study/Q1/aporee_6367_7912/generated/146813.png",
+      C: "static/user_study/Q1/aporee_4062_5420/generated/104133.png"
 
     }
   },
@@ -50,9 +50,9 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/aporee_49356_56256/ground_truth/68447.jpg",
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_49356_56256/generated/68445.jpg",
-      B: "static/user_study/Q1/aporee_1862_2667/generated/103904.jpg",
-      C: "static/user_study/Q1/aporee_22115_25681/generated/196160.jpg"
+      A: "static/user_study/Q1/aporee_49356_56256/generated/68445.png",
+      B: "static/user_study/Q1/aporee_1862_2667/generated/103904.png",
+      C: "static/user_study/Q1/aporee_22115_25681/generated/196160.png"
     }
   },
   sub_6: {
@@ -61,8 +61,8 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/sonicurban/930/surrounding/945.jpg",
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_49648_56611/generated/133430.jpg",
-      B: "static/user_study/Q1/aporee_6924_8612/generated/79171.jpg",
+      A: "static/user_study/Q1/aporee_49648_56611/generated/133430.png",
+      B: "static/user_study/Q1/aporee_6924_8612/generated/79171.png",
       C: "static/user_study/Q1/sonicurban/930/generated/930.jpg"
     }
   },
@@ -72,9 +72,9 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/aporee_49645_56608/ground_truth/25717.jpg"
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_6462_8009/generated/180280.jpg",
-      B: "static/user_study/Q1/aporee_49591_56549/generated/55874.jpg",
-      C: "static/user_study/Q1/aporee_49645_56608/generated/25717.jpg"
+      A: "static/user_study/Q1/aporee_6462_8009/generated/180280.png",
+      B: "static/user_study/Q1/aporee_49591_56549/generated/55874.png",
+      C: "static/user_study/Q1/aporee_49645_56608/generated/25717.png"
     }
   },
   sub_8: {
@@ -83,9 +83,9 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/sonicurban/1792/surrounding/1801.jpg",
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_6950_8641/generated/301994.jpg",
+      A: "static/user_study/Q1/aporee_6950_8641/generated/301994.png",
       B: "static/user_study/Q1/sonicurban/1792/generated/1792.jpg",
-      C: "static/user_study/Q1/aporee_4163_5523/generated/193723.jpg"
+      C: "static/user_study/Q1/aporee_4163_5523/generated/193723.png"
     }
   },
   sub_9: {
@@ -94,9 +94,9 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/aporee_49149_56305/ground_truth/216275.jpg"
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_49149_56305/generated/216266.jpg",
-      B: "static/user_study/Q1/aporee_6166_7692/generated/138538.jpg",
-      C: "static/user_study/Q1/aporee_6367_7912/generated/146836.jpg"
+      A: "static/user_study/Q1/aporee_49149_56305/generated/216266.png",
+      B: "static/user_study/Q1/aporee_6166_7692/generated/138538.png",
+      C: "static/user_study/Q1/aporee_6367_7912/generated/146836.png"
     }
   },
   sub_10: {
@@ -105,8 +105,8 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/sonicurban/3130/surrounding/3131.jpg",
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_47964_54529/generated/70122.jpg",
-      B: "static/user_study/Q1/aporee_4091_5449/generated/285917.jpg",
+      A: "static/user_study/Q1/aporee_47964_54529/generated/70122.png",
+      B: "static/user_study/Q1/aporee_4091_5449/generated/285917.png",
       C: "static/user_study/Q1/sonicurban/3130/generated/3130.jpg"
     }
   },
@@ -116,9 +116,9 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/aporee_47209_53645/ground_truth/146070.jpg"
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_21267_24694/generated/186172.jpg",
-      B: "static/user_study/Q1/aporee_47209_53645/generated/146070.jpg",
-      C: "static/user_study/Q1/aporee_21101_24520/generated/182206.jpg"
+      A: "static/user_study/Q1/aporee_21267_24694/generated/186172.png",
+      B: "static/user_study/Q1/aporee_47209_53645/generated/146070.png",
+      C: "static/user_study/Q1/aporee_21101_24520/generated/182206.png"
     }
   },
   sub_12: {
@@ -128,8 +128,8 @@ const Q1_CONFIG = {
     },
     generatedLandscape: {
       A: "static/user_study/Q1/sonicurban/4247/generated/4247.jpg",
-      B: "static/user_study/Q1/aporee_45778_51990/generated/186676.jpg",
-      C: "static/user_study/Q1/aporee_49356_56256/generated/68447.jpg"
+      B: "static/user_study/Q1/aporee_45778_51990/generated/186676.png",
+      C: "static/user_study/Q1/aporee_49356_56256/generated/68447.png"
     }
   },
   sub_13: {
@@ -138,9 +138,9 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/aporee_24229_28135/ground_truth/131177.jpg"
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_49814_56793/generated/171836.jpg",
-      B: "static/user_study/Q1/aporee_14405_16762/generated/301159.jpg",
-      C: "static/user_study/Q1/aporee_24229_28135/generated/131177.jpg"
+      A: "static/user_study/Q1/aporee_49814_56793/generated/171836.png",
+      B: "static/user_study/Q1/aporee_14405_16762/generated/301159.png",
+      C: "static/user_study/Q1/aporee_24229_28135/generated/131177.png"
     }
   },
   sub_14: {
@@ -149,9 +149,9 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/sonicurban/9628/surrounding/9634.jpg",
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_14223_16560/generated/332017.jpg",
+      A: "static/user_study/Q1/aporee_14223_16560/generated/332017.png",
       B: "static/user_study/Q1/sonicurban/9628/generated/9628.jpg",
-      C: "static/user_study/Q1/aporee_16984_19777/generated/15172.jpg"
+      C: "static/user_study/Q1/aporee_16984_19777/generated/15172.png"
     }
   },
   sub_15: {
@@ -160,19 +160,19 @@ const Q1_CONFIG = {
       B: "static/user_study/Q1/aporee_7780_9527/ground_truth/326714.jpg"
     },
     generatedLandscape: {
-      A: "static/user_study/Q1/aporee_7383_9108/generated/109107.jpg",
-      B: "static/user_study/Q1/aporee_4368_5739/generated/294795.jpg",
-      C: "static/user_study/Q1/aporee_7780_9527/generated/326714.jpg"
+      A: "static/user_study/Q1/aporee_7383_9108/generated/109107.png",
+      B: "static/user_study/Q1/aporee_4368_5739/generated/294795.png",
+      C: "static/user_study/Q1/aporee_7780_9527/generated/326714.png"
     }
   }
 };
 const Q2_CONFIG = {
   sub_1: {
-    audio: "static/user_study/Q2/audio/157.wav",
+    audio: "static/user_study/Q2/audio/13746.mp3",
     images: {
-      A: "static/user_study/Q1/aporee_4091_5449/generated/285926.jpg",
-      B: "static/user_study/Q1/aporee_6648_8206/generated/311066.jpg",
-      C: "static/user_study/Q2/generated/157.jpg",
+      A: "static/user_study/Q1/aporee_4091_5449/generated/285926.png",
+      B: "static/user_study/Q1/aporee_6648_8206/generated/311066.png",
+      C: "static/user_study/Q2/generated/649.png",
       D: "static/user_study/Q1/aporee_6903_8580/generated/165142.jpg",
       // E: "static/user_study/Q2/ground_truth/157.jpg"
     }
@@ -180,30 +180,30 @@ const Q2_CONFIG = {
   sub_2: {
     audio: "static/user_study/Q2/audio/sonicurban/9816.wav",
     images: {
-      A: "static/user_study/Q1/aporee_49631_56593/generated/188052.jpg",
+      A: "static/user_study/Q1/aporee_49631_56593/generated/188052.png",
       B: "static/user_study/Q2/generated/sonicurban/9816.jpg",
-      C: "static/user_study/Q1/aporee_4163_5523/generated/193711.jpg",
+      C: "static/user_study/Q1/aporee_4163_5523/generated/193711.png",
       // D: "static/user_study/Q2/ground_truth/sonicurban/9816.jpg",
-      D: "static/user_study/Q1/aporee_6806_8478/generated/49608.jpg"
+      D: "static/user_study/Q1/aporee_6806_8478/generated/49608.png"
     }
   },
   sub_3: {
     audio: "static/user_study/Q2/audio/243449.wav",
     images: {
-      A: "static/user_study/Q2/generated/243449.jpg",
-      B: "static/user_study/generated_pool/140202.jpg",
-      C: "static/user_study/generated_pool/150244.jpg",
+      A: "static/user_study/Q2/generated/243449.png",
+      B: "static/user_study/generated_pool/140202.png",
+      C: "static/user_study/generated_pool/150244.png",
       // D: "static/user_study/Q2/ground_truth/243449.jpg",
-      D: "static/user_study/generated_pool/157643.jpg"
+      D: "static/user_study/generated_pool/157643.png"
     }
   },
   sub_4: {
     audio: "static/user_study/Q2/audio/sonicurban/11154.wav",
     images: {
-      A: "static/user_study/Q1/aporee_1472_2019/generated/39400.jpg",
+      A: "static/user_study/Q1/aporee_1472_2019/generated/39400.png",
       // B: "static/user_study/Q2/ground_truth/sonicurban/11154.jpg",
-      B: "static/user_study/Q1/aporee_4163_5523/generated/193723.jpg",
-      C: "static/user_study/Q1/aporee_3740_5054/generated/275641.jpg",
+      B: "static/user_study/Q1/aporee_4163_5523/generated/193723.png",
+      C: "static/user_study/Q1/aporee_3740_5054/generated/275641.png",
       D: "static/user_study/Q2/generated/sonicurban/11154.jpg"
     }
   },
@@ -211,69 +211,69 @@ const Q2_CONFIG = {
     audio: "static/user_study/Q2/audio/70746.wav",
     images: {
       // A: "static/user_study/Q2/ground_truth/70746.jpg",
-      A: "static/user_study/generated_pool/171304.jpg",
-      B: "static/user_study/Q2/generated/70746.jpg",
-      C: "static/user_study/generated_pool/180155.jpg",
-      D: "static/user_study/generated_pool/193038.jpg"
+      A: "static/user_study/generated_pool/171304.png",
+      B: "static/user_study/Q2/generated/70746.png",
+      C: "static/user_study/generated_pool/180155.png",
+      D: "static/user_study/generated_pool/193038.png"
     }
   },
   sub_6: {
     audio: "static/user_study/Q2/audio/sonicurban/11338.wav",
     images: {
       A: "static/user_study/Q2/generated/sonicurban/11338.jpg",
-      B: "static/user_study/Q1/aporee_1862_2667/generated/103904.jpg",
-      C: "static/user_study/Q1/aporee_3740_5054/generated/275621.jpg",
+      B: "static/user_study/Q1/aporee_1862_2667/generated/103904.png",
+      C: "static/user_study/Q1/aporee_3740_5054/generated/275621.png",
       // D: "static/user_study/Q2/ground_truth/sonicurban/11338.jpg",
-      D: "static/user_study/Q1/aporee_49399_56318/generated/149338.jpg"
+      D: "static/user_study/Q1/aporee_49399_56318/generated/149338.png"
     }
   },
   sub_7: {
     audio: "static/user_study/Q2/audio/186158.wav",
     images: {
-      A: "static/user_study/generated_pool/201499.jpg",
-      B: "static/user_study/Q2/ground_truth/186158.jpg",
-      // C: "static/user_study/Q2/generated/186158.jpg",
-      C: "static/user_study/generated_pool/204085.jpg",
-      D: "static/user_study/generated_pool/213481.jpg"
+      A: "static/user_study/generated_pool/201499.png",
+      // B: "static/user_study/Q2/ground_truth/186158.jpg",
+      B: "static/user_study/Q2/generated/186158.png",
+      C: "static/user_study/generated_pool/204085.png",
+      D: "static/user_study/generated_pool/213481.png"
     }
   },
   sub_8: {
     audio: "static/user_study/Q2/audio/sonicurban/13115.wav",
     images: {
-      A: "static/user_study/generated_pool/217098.jpg",
-      B: "static/user_study/generated_pool/238491.jpg",
+      A: "static/user_study/generated_pool/217098.png",
+      B: "static/user_study/generated_pool/238491.png",
       // C: "static/user_study/Q2/ground_truth/sonicurban/13115.jpg",
-      C: "static/user_study/generated_pool/239708.jpg",
-      D: "static/user_study/Q2/generated/172440.jpg"
+      C: "static/user_study/generated_pool/239708.png",
+      D: "static/user_study/Q2/generated/172440.png"
     }
   },
   sub_9: {
     audio: "static/user_study/Q2/audio/268504.wav",
     images: {
-      A: "static/user_study/generated_pool/94702.jpg",
+      A: "static/user_study/generated_pool/94702.png",
       // B: "static/user_study/Q2/ground_truth/268504.jpg",
-      B: "static/user_study/generated_pool/496.jpg",
-      C: "static/user_study/Q2/generated/268504.jpg",
-      D: "static/user_study/generated_pool/3713.jpg"
+      B: "static/user_study/generated_pool/496.png",
+      C: "static/user_study/Q2/generated/268504.png",
+      D: "static/user_study/generated_pool/3713.png"
     }
   },
   sub_10: {
     audio: "static/user_study/Q2/audio/sonicurban/14117.wav",
     images: {
       A: "static/user_study/Q2/generated/sonicurban/14117.jpg",
-      B: "static/user_study/generated_pool/288844.jpg",
+      B: "static/user_study/generated_pool/288844.png",
       // C: "static/user_study/Q2/ground_truth/sonicurban/14117.jpg",
-      C: "static/user_study/generated_pool/292106.jpg",
-      D: "static/user_study/generated_pool/294868.jpg"
+      C: "static/user_study/generated_pool/292106.png",
+      D: "static/user_study/generated_pool/294869.png"
     }
   },
   sub_11: {
     audio: "static/user_study/Q2/audio/188052.wav",
     images: {
-      A: "static/user_study/generated_pool/295822.jpg",
-      B: "static/user_study/generated_pool/298575.jpg",
-      C: "static/user_study/generated_pool/297664.jpg",
-      D: "static/user_study/Q2/generated/188052.jpg",
+      A: "static/user_study/generated_pool/295822.png",
+      B: "static/user_study/generated_pool/298575.png",
+      C: "static/user_study/generated_pool/297664.png",
+      D: "static/user_study/Q2/generated/188052.png",
       // E: "static/user_study/Q2/ground_truth/188052.jpg"
     }
   },
@@ -281,40 +281,40 @@ const Q2_CONFIG = {
     audio: "static/user_study/Q2/audio/sonicurban/15571.wav",
     images: {
       A: "static/user_study/Q2/generated/sonicurban/15571.jpg",
-      B: "static/user_study/generated_pool/298937.jpg",
+      B: "static/user_study/generated_pool/298937.png",
       // C: "static/user_study/Q2/ground_truth/sonicurban/15571.jpg",
-      C: "static/user_study/generated_pool/299388.jpg",
-      D: "static/user_study/generated_pool/302242.jpg"
+      C: "static/user_study/generated_pool/299388.png",
+      D: "static/user_study/generated_pool/302242.png"
     }
   },
   sub_13: {
     audio: "static/user_study/Q2/audio/283426.wav",
     images: {
-      A: "static/user_study/generated_pool/302363.jpg",
+      A: "static/user_study/generated_pool/302363.png",
       // B: "static/user_study/Q2/ground_truth/283426.jpg",
-      B: "static/user_study/generated_pool/303061.jpg",
-      C: "static/user_study/generated_pool/303488.jpg",
-      D: "static/user_study/Q2/generated/283426.jpg"
+      B: "static/user_study/generated_pool/303061.png",
+      C: "static/user_study/generated_pool/303488.png",
+      D: "static/user_study/Q2/generated/283426.png"
     }
   },
   sub_14: {
     audio: "static/user_study/Q2/audio/sonicurban/21.wav",
     images: {
-      A: "static/user_study/generated_pool/305139.jpg",
+      A: "static/user_study/generated_pool/305139.png",
       B: "static/user_study/Q2/generated/sonicurban/21.jpg",
-      C: "static/user_study/generated_pool/313705.jpg",
+      C: "static/user_study/generated_pool/313705.png",
       // D: "static/user_study/Q2/ground_truth/sonicurban/21.jpg",
-      D: "static/user_study/generated_pool/314535.jpg"
+      D: "static/user_study/generated_pool/314535.png"
     }
   },
   sub_15: {
     audio: "static/user_study/Q2/audio/296357.wav",
     images: {
       // A: "static/user_study/Q2/ground_truth/296357.jpg",
-      A: "static/user_study/generated_pool/296237.jpg",
-      B: "static/user_study/Q2/generated/296357.jpg",
-      C: "static/user_study/generated_pool/292485.jpg",
-      D: "static/user_study/generated_pool/288116.jpg"
+      A: "static/user_study/generated_pool/296237.png",
+      B: "static/user_study/Q2/generated/296357.png",
+      C: "static/user_study/generated_pool/292485.png",
+      D: "static/user_study/generated_pool/288116.png"
     }
   }
 };
