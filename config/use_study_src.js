@@ -191,7 +191,7 @@ const Q2_CONFIG = {
     audio: "static/user_study/Q2/audio/243449.wav",
     images: {
       A: "static/user_study/Q2/generated/243449.jpg",
-      B: "static/user_study/generated_pool/140202.png",
+      B: "static/user_study/generated_pool/297664.jpg",
       C: "static/user_study/generated_pool/150244.png",
       // D: "static/user_study/Q2/ground_truth/243449.jpg",
       D: "static/user_study/generated_pool/157643.png"
@@ -208,13 +208,13 @@ const Q2_CONFIG = {
     }
   },
   sub_5: {
-    audio: "static/user_study/Q2/audio/70746.wav",
+    audio: "static/user_study/Q2/audio/sonicurban/1107.wav",
     images: {
       // A: "static/user_study/Q2/ground_truth/70746.jpg",
-      A: "static/user_study/generated_pool/171304.png",
-      B: "static/user_study/Q2/generated/70746.png",
-      C: "static/user_study/generated_pool/180155.png",
-      D: "static/user_study/generated_pool/193038.png"
+      A: "static/user_study/generated_pool/294868.jpg",
+      B: "static/user_study/Q2/generated/sonicurban/1107.jpg",
+      C: "static/user_study/generated_pool/325418.png",
+      D: "static/user_study/generated_pool/303488.png"
     }
   },
   sub_6: {
@@ -243,7 +243,7 @@ const Q2_CONFIG = {
       A: "static/user_study/generated_pool/217098.png",
       B: "static/user_study/Q2/generated/sonicurban/13115.jpg",
       // C: "static/user_study/Q2/ground_truth/sonicurban/13115.jpg",
-      C: "static/user_study/generated_pool/239708.png",
+      C: "static/user_study/generated_pool/213481.jpg",
       D: "static/user_study/Q2/generated/172440.png"
     }
   },
@@ -270,7 +270,7 @@ const Q2_CONFIG = {
   sub_11: {
     audio: "static/user_study/Q2/audio/62750.wav",
     images: {
-      A: "static/user_study/generated_pool/295822.png",
+      A: "static/user_study/generated_pool/3713.png",
       B: "static/user_study/generated_pool/298575.png",
       C: "static/user_study/generated_pool/180155.jpg",
       D: "static/user_study/Q2/generated/62750.jpg",
@@ -300,11 +300,11 @@ const Q2_CONFIG = {
   sub_14: {
     audio: "static/user_study/Q2/audio/sonicurban/21.wav",
     images: {
-      A: "static/user_study/generated_pool/305139.png",
+      A: "static/user_study/generated_pool/157643.jpg",
       B: "static/user_study/Q2/generated/sonicurban/21.jpg",
-      C: "static/user_study/Q2/generated/sonicurban/14117.jpg",
+      C: "static/user_study/generated_pool/201499.jpg",
       // D: "static/user_study/Q2/ground_truth/sonicurban/21.jpg",
-      D: "static/user_study/generated_pool/314535.png"
+      D: "static/user_study/generated_pool/13746.png"
     }
   },
   sub_15: {
