@@ -172,7 +172,7 @@ const Q2_CONFIG = {
     images: {
       A: "static/user_study/Q1/aporee_4091_5449/generated/285926.png",
       B: "static/user_study/Q1/aporee_6648_8206/generated/311066.png",
-      C: "static/user_study/Q2/generated/649.png",
+      C: "static/user_study/Q2/generated/13746.png",
       D: "static/user_study/Q1/aporee_6903_8580/generated/165142.jpg",
       // E: "static/user_study/Q2/ground_truth/157.jpg"
     }
@@ -284,17 +284,17 @@ const Q2_CONFIG = {
       B: "static/user_study/generated_pool/298937.png",
       // C: "static/user_study/Q2/ground_truth/sonicurban/15571.jpg",
       C: "static/user_study/generated_pool/299388.png",
-      D: "static/user_study/generated_pool/302242.png"
+      D: "static/user_study/generated_pool/302242.jpg"
     }
   },
   sub_13: {
-    audio: "static/user_study/Q2/audio/283426.wav",
+    audio: "static/user_study/Q2/audio/21076.wav",
     images: {
       A: "static/user_study/generated_pool/302363.png",
       // B: "static/user_study/Q2/ground_truth/283426.jpg",
-      B: "static/user_study/generated_pool/303061.png",
-      C: "static/user_study/generated_pool/303488.png",
-      D: "static/user_study/Q2/generated/283426.png"
+      B: "static/user_study/generated_pool/292485.jpg",
+      C: "static/user_study/generated_pool/140202.jpg",
+      D: "static/user_study/Q2/generated/21076.png"
     }
   },
   sub_14: {
@@ -302,7 +302,7 @@ const Q2_CONFIG = {
     images: {
       A: "static/user_study/generated_pool/305139.png",
       B: "static/user_study/Q2/generated/sonicurban/21.jpg",
-      C: "static/user_study/generated_pool/313705.png",
+      C: "static/user_study/Q2/generated/sonicurban/14117.jpg",
       // D: "static/user_study/Q2/ground_truth/sonicurban/21.jpg",
       D: "static/user_study/generated_pool/314535.png"
     }
