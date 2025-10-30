@@ -2,6 +2,57 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+/* Landing background */
+body {
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(245, 153, 46, 0.10), transparent 60%),
+              radial-gradient(1000px 500px at 90% 0%, rgba(64, 156, 255, 0.08), transparent 60%),
+              #ffffff;
+}
+
+.hero--landing {
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.02) 100%);
+}
+
+.hero-body--landing {
+  padding-top: 3.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.brand-mark {
+  width: 120px;
+  height: auto;
+  margin-bottom: 12px;
+  opacity: 0.95;
+}
+
+.tagline {
+  margin-top: 6px;
+  margin-bottom: 18px;
+  color: #4a4a4a;
+}
+
+.cta-row { margin-top: 18px; }
+.cta-wrap { display: inline-flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.cta {
+  border-radius: 10px;
+  padding: 10px 14px;
+  border: 1px solid rgba(0,0,0,0.06);
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+.cta--primary {
+  background: linear-gradient(120deg, #F5992E 0%, #F17A21 40%, #E45A13 100%);
+  color: #ffffff !important;
+  border: none;
+}
+.cta--ghost {
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.12);
+}
+.cta:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(0,0,0,0.10); }
+.cta .icon { margin-right: 6px; }
+
 
 .footer .icon-link {
     font-size: 25px;
@@ -168,7 +219,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: gradientFlow 6s linear infinite;
+    animation: gradientFlow 10s ease-in-out infinite;
 }
 
 @keyframes gradientFlow {
@@ -178,6 +229,11 @@ body {
     100% {
         background-position: -300% center;
     }
+}
+
+/* Footer tweaks */
+.footer--landing {
+  background: transparent;
 }
 
 
