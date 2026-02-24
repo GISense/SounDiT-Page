@@ -75,4 +75,26 @@ $(document).ready(function() {
 
     bulmaSlider.attach();
 
+    // Ambient audio toggle
+    const audioToggle = document.getElementById('audio-toggle');
+    const ambientAudio = document.getElementById('ambient-audio');
+    const icon = audioToggle.querySelector('.icon i');
+    
+    if (audioToggle && ambientAudio) {
+      audioToggle.addEventListener('click', function() {
+        if (ambientAudio.paused) {
+          ambientAudio.volume = 0.3;
+          ambientAudio.play().catch(e => console.log('Audio play failed:', e));
+          icon.classList.remove('fa-volume-mute');
+          icon.classList.add('fa-volume-up');
+          audioToggle.classList.add('playing');
+        } else {
+          ambientAudio.pause();
+          icon.classList.remove('fa-volume-up');
+          icon.classList.add('fa-volume-mute');
+          audioToggle.classList.remove('playing');
+        }
+      });
+    }
+
 })
