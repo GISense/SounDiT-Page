@@ -11,7 +11,13 @@ body {
               radial-gradient(1000px 500px at 90% 0%, rgba(64, 156, 255, 0.08), transparent 60%),
               #ffffff;
 }
-
+.soundscape-landscape-section {
+  background: linear-gradient(135deg,
+    rgba(72, 95, 199, 0.10),
+    rgba(0, 209, 178, 0.10),
+    rgba(255, 221, 87, 0.10)
+  );
+}
 .hero--landing {
   position: relative;
   min-height: 100vh;
@@ -620,3 +626,129 @@ body {
 
 
 
+/* ====== size control: two images together ≈ 1/3 viewport ====== */
+:root{
+  --sl-pair-w: 20vw;   /* 两张图 + gap 的总宽度（目标：全屏 1/3） */
+  --sl-gap: 16px;          /* 你原来的 gap */
+}
+
+.sl-pair{
+  display:flex;
+  gap: var(--sl-gap);
+  align-items:flex-start;
+  width: var(--sl-pair-w);     /* 关键：固定“对齐基准”为 1/3 屏宽 */
+}
+
+/* 两张图均分 sl-pair 宽度（扣掉 gap） */
+.sl-img{
+  flex: 1 1 0;
+  margin: 0;
+}
+
+.sl-img img{
+  width: 100%;
+  height: auto;
+  display:block;
+  object-fit: contain;
+}
+
+/* sl-card 跟随 sl-pair 宽度（音频/按钮就能对齐两图总宽） */
+.sl-card{
+  width: var(--sl-pair-w);
+}
+
+/* 音频/按钮对齐两图总宽，且尖角长方形 */
+/* Glassmorphism audio button */
+.sl-card .sl-audio-btn{
+  width: 100%;
+  border-radius: 0 !important;          /* 尖角长方形 */
+  justify-content: center;
+
+  /* 玻璃质感核心 */
+  background: rgba(255, 255, 255, 0.18) !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+
+  /* 让玻璃更“立体”一点 */
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  color: rgba(20, 20, 20, 0.9) !important;
+
+  /* 细节 */
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.sl-card .sl-audio-btn:hover{
+  background: rgba(255, 255, 255, 0.24) !important;
+  transform: translateY(-1px);
+  box-shadow:
+    0 14px 34px rgba(0, 0, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.sl-card .sl-audio-btn:active{
+  transform: translateY(0);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.30);
+}
+.sl-cap{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.sl-cap{
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+/* 图标/文字细调（可选） */
+.sl-card .sl-audio-icon{
+  font-weight: 700;
+  margin-right: 10px;
+  opacity: 0.9;
+}
+
+.sl-card .sl-audio-text{
+  letter-spacing: 0.2px;
+}
+
+/* 键盘可访问性：focus ring */
+.sl-card .sl-audio-btn:focus-visible{
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(57, 177, 255, 0.35),
+    0 12px 30px rgba(0, 0, 0, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.40);
+}
+.sl-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+/* hero-body 作为定位参照 */
+.hero .hero-body{
+  position: relative;
+}
+
+/* 贴近页面最左侧（非 fixed，会随页面滚动） */
+.lab-logo-gutter{
+  position: absolute;
+  top: 18px;     /* 需要就微调，让它和标题上缘对齐 */
+  left: 18px;    /* 页面最左侧留一点边距；要完全贴边就设 0 */
+  transform: none;
+  z-index: 2;
+}
+
+.lab-logo-gutter img{
+  height: 300px;
+  width: auto;
+  display: block;
+}
+
+/* 小屏幕避免遮挡 */
+@media (max-width: 1024px){
+  .lab-logo-gutter{ display: none; }
+}

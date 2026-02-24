@@ -44,6 +44,9 @@
 
 <section class="hero">
   <div class="hero-body">
+    <div class="lab-logo-gutter">
+      <img src="./static/images/GISenseLabLogoPNG.png" alt="GISense Lab logo">
+    </div>
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
@@ -59,17 +62,20 @@
             <span class="author-block no-link">
               Albert Jiang<sup>1</sup>,
             </span>
-            <span class="author-block no-link">
-              Teng Fei<sup>5</sup>,
+            <span class="author-block">
+              <a href="https://only4john.github.io/">Teng Fei</a><sup>5</sup>,
             </span>
             <span class="author-block">
               <a href="https://www.cs.utexas.edu/~huangqx/">Qixing Huang</a><sup>1</sup>,
             </span>
             <span class="author-block">
+              <a href="https://spgbarrett.wixsite.com/bingzhou">Bing Zhou</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
               <a href="https://taco-group.github.io/">Zhengzhong Tu</a><sup>6</sup>,
             </span>
-            <span class="author-block no-link">
-              Shan Ye<sup>7,†</sup>,
+            <span class="author-block">
+              <a href="https://yeshan-geo.github.io/">Shan Ye</a><sup>7,†</sup>,
             </span>
             <span class="author-block">
               <a href="https://liberalarts.utexas.edu/geography/faculty/yk9999">Yuhao Kang</a><sup>1,†</sup>,
@@ -94,29 +100,22 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
+
               <span class="link-block">
-                <a class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/abs/2505.12734" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
+                      <i class="ai ai-arxiv"></i>
                   </span>
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
-                <a class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/GISense/SounDiT" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code Coming Soon</span>
+                  <span>Code</span>
                   </a>
               </span>
               <span class="link-block">
@@ -147,10 +146,181 @@
 </section>
 
 
+<div class="container is-max-desktop">
+  <!-- Abstract. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Abstract</h2>
+      <div class="content has-text-justified">
+        <p>
+          Recent audio-to-image models have shown impressive performance in generating images of specific objects conditioned on their corresponding sounds. However, these models fail to reconstruct real-world landscapes conditioned on environmental soundscapes. To address this gap, we present Geo-contextual Soundscape-to-Landscape (GeoS2L) generation,
+          a novel and practically significant task that aims to synthesize geographically realistic landscape images from environmental soundscapes.
+        </p></div>
+      <div class="content has-text-centered">
+        <img src="./static/images/teaser.png" alt="Pipeline">
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          To support this task, we construct two large-scale geo-contextual multi-modal datasets, SoundingSVI and SonicUrban, which pair diverse environmental soundscapes with real-world landscape images. We propose SounDiT, a diffusion transformer (DiT)-based model that incorporates environmental soundscapes and geo-contextual scene conditioning to synthesize geographically coherent landscape images. Furthermore, we propose the Place Similarity Score (PSS), a practically-informed geo-contextual evaluation framework to measure consistency between input soundscapes and generated landscape images. Extensive experiments demonstrate that SounDiT outperforms existing baselines in the GeoS2L, while the PSS effectively captures multi-level generation consistency across element, scene,and human perception.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
 
 
+<section class="hero soundscape-landscape-section">
+  <div class="hero-body">
+    <div class="container is-widescreen">
+      <h2 class="title is-3 has-text-centered">Geo-contextual Soundscape-to-Landscape</h2>
+      <div style="width: 100%; margin: 0 auto;"></div>
+
+      <div class="sl-grid">
+
+        <div class="sl-card">
+          <div class="sl-pair">
+            <figure class="sl-img">
+              <figcaption class="sl-cap">Ground Truth</figcaption>
+              <img src="./static/samples/GR/13.png" alt="Ground Truth image">
+            </figure>
+
+            <figure class="sl-img">
+              <figcaption class="sl-cap">Generated</figcaption>
+              <img src="./static/samples/gen/13.jpg" alt="Generated image">
+            </figure>
+          </div>
+          <!-- 按钮就是你的“播放条” -->
+          <button class="button is-medium sl-audio-btn" type="button" data-audio="audio-13">
+            <span class="sl-audio-icon" aria-hidden="true">►</span>
+            <span class="sl-audio-text">Play soundscape</span>
+          </button>
+          <div class="sl-audio-wrap">
+            <audio id="audio-13" class="sl-audio" preload="none" src="./static/samples/audio/13.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="sl-card">
+          <div class="sl-pair">
+            <figure class="sl-img">
+              <figcaption class="sl-cap">Ground Truth</figcaption>
+              <img src="./static/samples/GR/143305.png" alt="Ground Truth image">
+            </figure>
+
+            <figure class="sl-img">
+              <figcaption class="sl-cap">Generated</figcaption>
+              <img src="./static/samples/gen/143305.jpg" alt="Generated image">
+            </figure>
+          </div>
+          <!-- 按钮就是你的“播放条” -->
+          <button class="button is-medium sl-audio-btn" type="button" data-audio="audio-143305">
+            <span class="sl-audio-icon" aria-hidden="true">►</span>
+            <span class="sl-audio-text">Play soundscape</span>
+          </button>
+          <div class="sl-audio-wrap">
+            <audio id="audio-143305" class="sl-audio" preload="none" src="./static/samples/audio/143305.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="sl-card">
+          <div class="sl-pair">
+            <figure class="sl-img">
+              <figcaption class="sl-cap">Ground Truth</figcaption>
+              <img src="./static/samples/GR/30463.png" alt="Ground Truth image">
+            </figure>
+
+            <figure class="sl-img">
+              <figcaption class="sl-cap">Generated</figcaption>
+              <img src="./static/samples/gen/30463.jpg" alt="Generated image">
+            </figure>
+          </div>
+          <!-- 按钮就是你的“播放条” -->
+          <button class="button is-medium sl-audio-btn" type="button" data-audio="audio-30463">
+            <span class="sl-audio-icon" aria-hidden="true">►</span>
+            <span class="sl-audio-text">Play soundscape</span>
+          </button>
+          <div class="sl-audio-wrap">
+            <audio id="audio-30463" class="sl-audio" preload="none" src="./static/samples/audio/30463.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="sl-card">
+          <div class="sl-pair">
+            <figure class="sl-img">
+              <figcaption class="sl-cap">Ground Truth</figcaption>
+              <img src="./static/samples/GR/35339.png" alt="Ground Truth image">
+            </figure>
+
+            <figure class="sl-img">
+              <figcaption class="sl-cap">Generated</figcaption>
+              <img src="./static/samples/gen/35339.jpg" alt="Generated image">
+            </figure>
+          </div>
+          <!-- 按钮就是你的“播放条” -->
+          <button class="button is-medium sl-audio-btn" type="button" data-audio="audio-35339">
+            <span class="sl-audio-icon" aria-hidden="true">►</span>
+            <span class="sl-audio-text">Play soundscape</span>
+          </button>
+          <div class="sl-audio-wrap">
+            <audio id="audio-35339" class="sl-audio" preload="none" src="./static/samples/audio/35339.mp3"></audio>
+          </div>
+        </div>
+
+        <div class="sl-card">
+          <div class="sl-pair">
+            <figure class="sl-img">
+              <figcaption class="sl-cap">Ground Truth</figcaption>
+              <img src="./static/samples/GR/325928.png" alt="Ground Truth image">
+            </figure>
+
+            <figure class="sl-img">
+              <figcaption class="sl-cap">Generated</figcaption>
+              <img src="./static/samples/gen/325928.jpg" alt="Generated image">
+            </figure>
+          </div>
+          <!-- 按钮就是你的“播放条” -->
+          <button class="button is-medium sl-audio-btn" type="button" data-audio="audio-325928">
+            <span class="sl-audio-icon" aria-hidden="true">►</span>
+            <span class="sl-audio-text">Play soundscape</span>
+          </button>
+          <div class="sl-audio-wrap">
+            <audio id="audio-325928" class="sl-audio" preload="none" src="./static/samples/audio/325928.mp3"></audio>
+          </div>
+        </div>
+
+
+
+        <div class="sl-card">
+          <div class="sl-pair">
+            <figure class="sl-img">
+              <figcaption class="sl-cap">Ground Truth</figcaption>
+              <img src="./static/samples/GR/330594.png" alt="Ground Truth image">
+            </figure>
+
+            <figure class="sl-img">
+              <figcaption class="sl-cap">Generated</figcaption>
+              <img src="./static/samples/gen/330594.jpg" alt="Generated image">
+            </figure>
+          </div>
+          <!-- 按钮就是你的“播放条” -->
+          <button class="button is-medium sl-audio-btn" type="button" data-audio="audio-330594">
+            <span class="sl-audio-icon" aria-hidden="true">►</span>
+            <span class="sl-audio-text">Play soundscape</span>
+          </button>
+          <div class="sl-audio-wrap">
+            <audio id="audio-330594" class="sl-audio" preload="none" src="./static/samples/audio/330594.mp3"></audio>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 
@@ -178,5 +348,48 @@
   </div>
 </footer>
 
+
+<script>
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".sl-audio-btn");
+    if (!btn) return;
+
+    const audioId = btn.getAttribute("data-audio");
+    const audio = document.getElementById(audioId);
+    if (!audio) return;
+
+    // 关掉其他正在播放的音频
+    document.querySelectorAll(".sl-audio").forEach(a => {
+      if (a !== audio && !a.paused) {
+        a.pause();
+        a.currentTime = 0;
+        const otherBtn = document.querySelector(`.sl-audio-btn[data-audio="${a.id}"]`);
+        if (otherBtn) {
+          otherBtn.querySelector(".sl-audio-icon").textContent = "►";
+          otherBtn.querySelector(".sl-audio-text").textContent = "Play soundscape";
+        }
+      }
+    });
+
+    const icon = btn.querySelector(".sl-audio-icon");
+    const text = btn.querySelector(".sl-audio-text");
+
+    if (audio.paused) {
+      audio.play();
+      icon.textContent = "❚❚";
+      text.textContent = "Pause soundscape";
+    } else {
+      audio.pause();
+      icon.textContent = "►";
+      text.textContent = "Play soundscape";
+    }
+
+    // 播放结束后自动恢复按钮状态
+    audio.onended = () => {
+      icon.textContent = "►";
+      text.textContent = "Play soundscape";
+    };
+  });
+</script>
 </body>
 </html>
