@@ -45,7 +45,9 @@
 <section class="hero">
   <div class="hero-body">
     <div class="lab-logo-gutter">
-      <img src="./static/images/GISenseLabLogoPNG.png" alt="GISense Lab logo">
+      <a href="https://sites.utexas.edu/gisense/" target="_blank" rel="noopener noreferrer">
+        <img src="./static/images/GISenseLabLogoPNG.png" alt="GISense Lab logo">
+      </a>
     </div>
     <div class="container is-max-desktop">
       <div class="columns is-centered">
@@ -143,7 +145,7 @@
       </div>
     </div>
   </div>
-</section>
+
 
 
 <div class="container is-max-desktop">
@@ -163,12 +165,13 @@
         <p>
           To support this task, we construct two large-scale geo-contextual multi-modal datasets, SoundingSVI and SonicUrban, which pair diverse environmental soundscapes with real-world landscape images. We propose SounDiT, a diffusion transformer (DiT)-based model that incorporates environmental soundscapes and geo-contextual scene conditioning to synthesize geographically coherent landscape images. Furthermore, we propose the Place Similarity Score (PSS), a practically-informed geo-contextual evaluation framework to measure consistency between input soundscapes and generated landscape images. Extensive experiments demonstrate that SounDiT outperforms existing baselines in the GeoS2L, while the PSS effectively captures multi-level generation consistency across element, scene,and human perception.
         </p>
+        <br>
       </div>
     </div>
   </div>
 
 </div>
-
+</section>
 
 
 
@@ -315,6 +318,121 @@
         </div>
 
       </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="hero">
+<div class="container is-max-desktop">
+  <!-- Abstract. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <br>
+      <h2 class="title is-3">Method</h2>
+      <div class="content has-text-justified">
+        <p>
+          To effectively and efficiently inject soundscape and scene context, each SounDiT block introduces (1) a Mixture-of-Experts (MoE) Soundscape Conditioning module, (2) a Scene Low-Rank Mixer (SLRCM) module, and a Scene AdaLN (S-AdaLN) module to improve scene consistency.  By hierarchically fusing visual, scene,
+          and soundscape cues, SounDiT generates geo-contextually
+          coherent landscapes.
+        </p></div>
+      <div class="content has-text-centered">
+        <img src="./static/images/S2L_Figures.png" alt="Pipeline">
+      </div>
+      <div class="content has-text-justified">
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+
+<section class="hero">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <br>
+        <h2 class="title is-3">Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            A car horn might suggest a congested urban street, rather than a static vehicle. Prior A2I studies have primarily relied on large-scale, general-domain audio-visual datasets. These datasets primarily focus on sound-source localization and general audio-visual correspondence learning, lacking the specific geographical context required for soundscape-to-landscape generation.
+            For instance, geographers may be more interested in generating a wetland implied by a frog call, rather than an image of the frog itself. To address this gap, we introduce two new multimodal datasets: SoundingSVI and SonicUrban, designed to support GeoS2L generation with large-scale, geographically diverse, and context-rich data.
+          </p></div>
+        <div class="content has-text-centered">
+          <img src="./static/images/dataset_construction.png" alt="Pipeline">
+        </div>
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="hero">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <br>
+        <h2 class="title is-3">
+          Geo-Contextual Evaluation Framework:
+          <span class="tag is-link is-light is-medium pss-badge" style="vertical-align: middle;">
+            Place Similarity Score (PSS)
+          </span>
+        </h2>
+        <div class="content has-text-justified">
+          <p>
+            Since soundscapes and landscapes co-occur in the same space, they are expected to share similar environmental characteristics and place settings.
+            Following this hypothesis, we introduce Place Similarity Score (PSS), a practically informed geo-contextual evaluation that quantifies the underlying place setting reflected in images across the element-, scene-, and human-perception levels.
+            These three levels of measurements of environmental characteristics have been widely employed in geographic and urban planning practices.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/Fig4-Evaluation.jpg" alt="Pipeline">
+        </div>
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="hero soundscape-landscape-section">
+  <div class="hero-body">
+    <div class="container is-widescreen">
+      <h2 class="title is-3 has-text-centered">Acknowledgements</h2>
+        <div class="ack-logos">
+          <a class="ack-logo" href="https://provider1.example" target="_blank" rel="noopener noreferrer" aria-label="Provider 1">
+            <img src="./static/images/ACCESS.png" alt="Provider 1 logo">
+          </a>
+
+          <a class="ack-logo" href="https://provider2.example" target="_blank" rel="noopener noreferrer" aria-label="Provider 2">
+            <img src="./static/images/NAIRR_pilot.webp" alt="Provider 2 logo">
+          </a>
+
+          <a class="ack-logo" href="https://provider3.example" target="_blank" rel="noopener noreferrer" aria-label="Provider 3">
+            <img src="./static/images/tacc.png" alt="Provider 3 logo">
+          </a>
+        </div>
 
     </div>
 

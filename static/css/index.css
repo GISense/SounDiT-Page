@@ -768,7 +768,7 @@ body {
 }
 
 .lab-logo-gutter img{
-  height: 300px;
+  height: 200px;
   width: auto;
   display: block;
 }
@@ -776,4 +776,58 @@ body {
 /* 小屏幕避免遮挡 */
 @media (max-width: 1024px){
   .lab-logo-gutter{ display: none; }
+}
+
+.pss-badge{
+  font-size: 1.05rem;     /* 默认 tag 偏小，提大一点 */
+  padding: 0.45em 0.8em;  /* 让块更“饱满” */
+  line-height: 1.1;
+}
+
+/* Acknowledgements logos: responsive, evenly distributed */
+.ack-logos{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 一排三等分 */
+  gap: clamp(14px, 2.2vw, 28px);
+  align-items: center;
+  justify-items: center;
+  margin-top: 1.25rem;
+}
+
+/* 每个 logo 占满自己的格子，但图片不变形 */
+.ack-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: clamp(6px, 0.8vw, 10px);
+}
+
+/* 控制 logo 尺寸：随屏幕缩放，有上限 */
+.ack-logo img{
+  width: min(clamp(220px, 22vw, 360px), 100%);
+  max-height: clamp(70px, 7vw, 120px);
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform .15s ease;
+}
+
+/* 平板：2列 */
+@media (max-width: 1024px){
+  .ack-logos{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* 手机：1列 */
+@media (max-width: 640px){
+  .ack-logos{ grid-template-columns: 1fr; }
+  .ack-logo img{ max-height: 64px; }
+}
+
+/* 可选：hover 提示可点击 */
+.ack-logo:hover img{
+  transform: translateY(-1px);
+}
+.ack-logo img{
+  transition: transform .15s ease;
 }
